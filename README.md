@@ -8,11 +8,11 @@ Focalboard is an open-source, self-hosted alternative to Trello, Notion, and Asa
 
 ## Features (MVP)
 
-- ✅ Connect to self-hosted Focalboard instance
-- ✅ View boards and cards
-- ✅ Create/edit cards
-- ✅ Drag-and-drop cards between columns
-- ✅ Offline support (local caching)
+- [ ] Connect to self-hosted Focalboard instance
+- [ ] View boards and cards
+- [ ] Create/edit cards
+- [ ] Drag-and-drop cards between columns
+- [ ] Offline support (local caching)
 
 ## Planned Features
 
