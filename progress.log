@@ -1124,3 +1124,631 @@ bb88872 chore: auto-save progress 2026-04-07 11:00
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main c4dc510] chore: auto-save progress 2026-04-07 13:30
+ 563 files changed, 4123 insertions(+), 3280 deletions(-)
+ create mode 100644 app/build/intermediates/apk_ide_redirect_file/debug/redirect.txt
+ create mode 100644 app/build/intermediates/app_metadata/debug/app-metadata.properties
+ create mode 100644 app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_4/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_5/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_6/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_7/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_8/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_9/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_0/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_1/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_2/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_3/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_4/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_5/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_6/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_7/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_8/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_9/graph.bin
+ create mode 100644 app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+ create mode 100644 app/build/intermediates/dex_archive_input_jar_hashes/debug/out
+ create mode 100644 app/build/intermediates/dex_number_of_buckets_file/debug/out
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+JhLjJXOVgPzSLiENRwKhXLu6c4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+NPK7ch0h7yDhMzPP9NbbRqt6+k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0OthAWndlum1_Ef9QyISBDbyAhA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0txqChjcx3YV4PmlMQCEwJrxews=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1qNAss5GgkW+hN5N8NtV6E8Ru8s=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2yPw2vMAcPFMEKAn8px3E6Z2OoI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/39qRjEQlaCeskjysdy0CA20mn4Q=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/41lgecDnOWjHL4FTuhejBMHQSLI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/4FQnrWqQHvKtVMvbUVXAL7FAGwc=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5M7w6IQsOvx_IvB92fpgMgKieYE=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5PZ5Tfwp_nQjd9E7eoDSA2FFG2Y=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6W1++0xYnIgPwBlQrULiCUgHqLo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6ZdlqEQgA3aDDmfAKCorWWtEuHU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6n0nMd5dx5fiDPTMdS+1vEwOc6I=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/93WNdWRPud9ubpHbbqKHIRwwues=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9kyoIOQNCzusEhw2weiwlrmJiBU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/AO88eigjUq9f4rFCsnwTywUKK+4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Bev+2vg0otm1ANdS00lx615CSNQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EA42pfnbE6CHB6D21FzaFclc9Ig=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EBIiyjPpNJLTqp6El_T7nBpM2cQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EeGJj1pNd8Xr4DyXHILwV+LWJaw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Ex4Re3jVcDyZJpUVJcruhWkDNps=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/F0o9f146yBp0snWC40Cj6A+Ex2Q=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Feby4MjLAJ1EdXB0ngIISaaeBnI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GS9rzKenVAXCRpkzNQjq+uIL9xU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/G_IALQ1m16yo_H+w7gEL87cpi_c=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Gky5ZxcILhQfNRERGcrG1Xo5sUw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IPoM_ysncMrF2tOb95Hwv01JqMM=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IkpogLJArJUfRQjnuCcnRdPqt4A=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Jx2ACtPRDXlzjQlzglejy6KAUgQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/L7YHbIHvDWd3Cc6_VBTQqvAjMrc=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LIRdrFYNpo7jhVHZe+hosRSOxQA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LkkU5+vpNfxxckYixpZQ99UC24A=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LrePvhnxwOD1y6Ek01yfE5SW3RU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/MVyXCW0+bJSsZoEYXFvLmqjTr8M=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/NID5qoCsSfNAWdb6BudJL7PS9iQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/O6zDJ8LnVCKghC4cY8wjt8aVkt8=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OFRaniys8lzBn5KODH6T_iue8Gw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OowRLHciEWMauwnBslDk40BlyOo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/P9UweHkkUQExJdeKikuSYWNQHIc=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Po5JRqgwJOQu+21SNSU12OOYgrA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/S8tb3I9_XsPbr_zEZU8vlvlNea0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SxMKE142dNeEoPQEpaY9wbXbb0k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/T5LjIafd7fMP+THgh1APnJbgF64=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TObN4L6sV+D1b6UcM413gwSqwRE=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/U69X4LL535GGkmoN9QXqmPM_aPw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VBGqBo8gRIEZxGAEDLidO9Dztss=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VOLjslBFq_AGkCK+xy0TF5BH7Xs=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WsbdFb+dl8ePjfy8WnHP216B0eg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/X4Vmvd5k17bYCCF9MaXxDFcJxC0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZMjA2oYtQEyBM7SeZQn7mVobv7c=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Zkx16JKY1xZ2y2ueSA+4Og5Y3WY=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_F4FmLcqz0dfV2evxjarZB7yIX4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aM3IVMGAny510+o0jhmAiUEJFTA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aNA22AmlY9bqtB70oAg7vhPyCwI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/bQI_sjWWIxd8RonGtAcTmBTC03s=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dUXT14G56qzNK8US3pcjk0YmT90=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fYpRjCheE7OXcA0aAUbWagDAdq0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/figPCiO3xNXDgZa9nfSivK28bkU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/gsGSoQEYnHUUyDU9fQxNsSXepaI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ibnLgc0juzjAxAssKLx1+fHGGsw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/iq5kShvOIs2CLwxYQ30LANOogq4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jaiCogSf2_GY1Pz6Hmti+ywv05k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/pg6ysCtg+ithhhfM12dP+_gl3jU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/q3r1WoTN9eIUCHvfbyWGYjd3d+I=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/q8F1RgvNJjpIzVJYoX6SoeZ+e_M=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qf29Jpl8pOM9YrKGuO_yFqdQ5sA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rse1iMCeRCS00weiW5hgVwFKpMg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/sheCOjjdnt0YWB1eZa40BzR6FFk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ukkN2OUFgBbaLzsYb6xKZaUf2xg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uyLKc4BWwFUjyLuBz+G14PILf20=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vuk8w7LtyRWrCSRY0Ri9jYnF_Ds=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/xdVgs4G4mKT2FFTQRTKTcrEZ2Ic=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yIAEjrM_n7EioZrvvCiQu7RbEsE=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yengta030sTmpPErg6xWaBPBYOU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ypYz9ZnZZSIxOAfwlvbjpTxsnmA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yy2GEiinzFfR2SS5qbyo7kiJ9+s=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zDkUFZA3qTSjGYT+lCnY+rGsnNQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zZALyyp3Piv6nBGegM0I0W7Tv4M=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zljJSj4cFjHNuyvitAnBPgYHQHI=
+ create mode 100644 app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0
+ create mode 100644 app/build/intermediates/java_res/debug/out/META-INF/app_debug.kotlin_module
+ create mode 100644 app/build/intermediates/merged_java_res/debug/base.jar
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-hdpi-v4/ic_launcher.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-hdpi-v4/ic_launcher_round.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_launcher.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_launcher_round.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xhdpi-v4/ic_launcher.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xhdpi-v4/ic_launcher_round.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xxhdpi-v4/ic_launcher.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xxhdpi-v4/ic_launcher_round.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xxxhdpi-v4/ic_launcher.png
+ create mode 100644 app/build/intermediates/packaged_res/debug/mipmap-xxxhdpi-v4/ic_launcher_round.png
+ create mode 100644 app/build/intermediates/processed_res/debug/out/output-metadata.json
+ create mode 100644 app/build/intermediates/processed_res/debug/out/resources-debug.ap_
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp$Companion.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/LiveLiterals$FocalboardAppKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/LiveLiterals$MainActivityKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/MainActivity.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/AuthResponse.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Board.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardCreateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRow.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowCreateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowUpdateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardView.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CellValue.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Filter.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LiveLiterals$ApiServiceKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LiveLiterals$FocalboardApiKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LoginRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/UserInfo.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ViewOptions.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/LiveLiterals$SettingsManagerKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$Companion.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$clearAuth$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManagerKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository$login$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/LiveLiterals$AuthRepositoryKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/LiveLiterals$NavGraphKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Login.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Main.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LiveLiterals$LoginScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/LiveLiterals$MainScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/LiveLiterals$ThemeKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_0.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_1.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_2.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_3.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_4.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_5.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_6.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_7.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_8.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/d33bee0f9e8fac1e615c45a82c25dacad9121b2d2c79c2fa7297e91dcd05e572_9.jar
+ create mode 100644 app/build/intermediates/runtime_symbol_list/debug/R.txt
+ create mode 100644 app/build/intermediates/signing_config_versions/debug/signing-config-versions.json
+ create mode 100644 app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ create mode 100644 app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+ create mode 100644 app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ create mode 100644 app/build/outputs/apk/debug/app-debug.apk
+ create mode 100644 app/build/outputs/apk/debug/output-metadata.json
+ create mode 100644 app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/LiveLiterals$FocalboardAppKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/LiveLiterals$MainActivityKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/MainActivity.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/AuthResponse.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Board.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRow.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowUpdateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardView.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CellValue.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Filter.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LiveLiterals$ApiServiceKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LiveLiterals$FocalboardApiKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LoginRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/UserInfo.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ViewOptions.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/LiveLiterals$SettingsManagerKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$clearAuth$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManagerKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$login$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/LiveLiterals$AuthRepositoryKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/LiveLiterals$NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Login.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Main.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LiveLiterals$LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/LiveLiterals$MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/LiveLiterals$ThemeKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt.class
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-07 13:30:01
+
+### 📁 Recent Commits
+96f9e82 chore: auto-save progress 2026-04-07 13:00
+bce6057 chore: auto-save progress 2026-04-07 12:30
+90ebbdd chore: auto-save progress 2026-04-07 12:00
+87fa693 chore: auto-save progress 2026-04-07 11:30
+bb88872 chore: auto-save progress 2026-04-07 11:00
+
+### 📊 Repository Stats
+- **Total commits:** 19
+- **Total files:** 805
+- **Total lines of code:** 8867
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/checksums/checksums.lock
+ M .gradle/8.2/checksums/md5-checksums.bin
+ M .gradle/8.2/checksums/sha1-checksums.bin
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/8.2/fileHashes/resourceHashesCache.bin
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ M .gradle/file-system.probe
+ M app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+ M app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+ M app/build/intermediates/local_only_symbol_list/debug/R-def.txt
+ M app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json
+ M app/build/intermediates/source_set_path_map/debug/file-map.txt
+ M app/build/outputs/logs/manifest-merger-debug-report.txt
+ M app/src/main/kotlin/com/focalboard/android/ui/screens/main/MainScreen.kt
+ M gradle.properties
+ M local.properties
+ M progress.log
+?? app/build/intermediates/apk_ide_redirect_file/
+?? app/build/intermediates/app_metadata/
+?? app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/
+?? app/build/intermediates/desugar_graph/
+?? app/build/intermediates/dex/
+?? app/build/intermediates/dex_archive_input_jar_hashes/
+?? app/build/intermediates/dex_number_of_buckets_file/
+?? app/build/intermediates/incremental/debug-mergeJavaRes/
+?? app/build/intermediates/incremental/mergeDebugJniLibFolders/
+?? app/build/intermediates/incremental/packageDebug/
+?? app/build/intermediates/java_res/
+?? app/build/intermediates/merged_java_res/
+?? app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat
+?? app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat
+?? app/build/intermediates/packaged_res/debug/mipmap-hdpi-v4/
+?? app/build/intermediates/packaged_res/debug/mipmap-mdpi-v4/
+?? app/build/intermediates/packaged_res/debug/mipmap-xhdpi-v4/
+?? app/build/intermediates/packaged_res/debug/mipmap-xxhdpi-v4/
+?? app/build/intermediates/packaged_res/debug/mipmap-xxxhdpi-v4/
+?? app/build/intermediates/processed_res/
+?? app/build/intermediates/project_dex_archive/
+?? app/build/intermediates/runtime_symbol_list/
+?? app/build/intermediates/signing_config_versions/
+?? app/build/intermediates/symbol_list_with_package_name/
+?? app/build/kotlin/
+?? app/build/outputs/apk/
+?? app/build/tmp/
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
