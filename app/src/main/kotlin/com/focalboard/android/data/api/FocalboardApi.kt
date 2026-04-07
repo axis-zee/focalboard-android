@@ -3,36 +3,53 @@ package com.focalboard.android.data.api
 import retrofit2.http.*
 
 /**
- * Focalboard API client interface.
+ * Focalboard v2 API client interface.
  * 
- * Based on Focalboard's REST API endpoints.
- * Note: This is a simplified version - actual API may vary.
+ * Based on Focalboard's v2 REST API with CSRF protection.
+ * Reference: https://github.com/mattermost/focalboard
  */
 interface FocalboardApi {
     
     /**
-     * Authenticate with the server
+     * Get CSRF token by making a request to the API
+     * This will set the CSRF cookie in the client
      */
-    @POST("api/v1/auth/login")
-    suspend fun login(@Body credentials: LoginRequest): AuthResponse
+    @GET("api/v2/auth/csrf")
+    suspend fun getCsrfToken(): CsrfResponse
+    
+    /**
+     * Authenticate with the server using v2 API
+     */
+    @POST("api/v2/login")
+    suspend fun login(
+        @Header("X-CSRF-Token") csrfToken: String,
+        @Body credentials: LoginRequestV2
+    ): AuthResponseV2
     
     /**
      * Get current user info
      */
-    @GET("api/v1/users/me")
-    suspend fun getCurrentUser(@Header("Authorization") token: String): UserInfo
+    @GET("api/v2/users/me")
+    suspend fun getCurrentUser(
+        @Header("X-CSRF-Token") csrfToken: String,
+        @Header("Authorization") token: String
+    ): UserInfo
     
     /**
      * Get all boards for the current user
      */
-    @GET("api/v1/workspace/boards")
-    suspend fun getBoards(@Header("Authorization") token: String): List<Board>
+    @GET("api/v2/workspace/boards")
+    suspend fun getBoards(
+        @Header("X-CSRF-Token") csrfToken: String,
+        @Header("Authorization") token: String
+    ): List<Board>
     
     /**
      * Get a specific board by ID
      */
-    @GET("api/v1/workspace/boards/{boardId}")
+    @GET("api/v2/workspace/boards/{boardId}")
     suspend fun getBoard(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String
     ): Board
@@ -40,8 +57,9 @@ interface FocalboardApi {
     /**
      * Create a new board
      */
-    @POST("api/v1/workspace/boards")
+    @POST("api/v2/workspace/boards")
     suspend fun createBoard(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Body board: BoardCreateRequest
     ): Board
@@ -49,8 +67,9 @@ interface FocalboardApi {
     /**
      * Get all views (layouts) for a board
      */
-    @GET("api/v1/workspace/boards/{boardId}/views")
+    @GET("api/v2/workspace/boards/{boardId}/views")
     suspend fun getBoardViews(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String
     ): List<BoardView>
@@ -58,8 +77,9 @@ interface FocalboardApi {
     /**
      * Get rows (cards) for a specific view
      */
-    @GET("api/v1/workspace/boards/{boardId}/views/{viewId}/rows")
+    @GET("api/v2/workspace/boards/{boardId}/views/{viewId}/rows")
     suspend fun getBoardRows(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String,
         @Path("viewId") viewId: String
@@ -68,8 +88,9 @@ interface FocalboardApi {
     /**
      * Create a new row (card)
      */
-    @POST("api/v1/workspace/boards/{boardId}/views/{viewId}/rows")
+    @POST("api/v2/workspace/boards/{boardId}/views/{viewId}/rows")
     suspend fun createRow(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String,
         @Path("viewId") viewId: String,
@@ -79,8 +100,9 @@ interface FocalboardApi {
     /**
      * Update a row (card)
      */
-    @PUT("api/v1/workspace/boards/{boardId}/rows/{rowId}")
+    @PUT("api/v2/workspace/boards/{boardId}/rows/{rowId}")
     suspend fun updateRow(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String,
         @Path("rowId") rowId: String,
@@ -90,24 +112,29 @@ interface FocalboardApi {
     /**
      * Delete a row (card)
      */
-    @DELETE("api/v1/workspace/boards/{boardId}/rows/{rowId}")
+    @DELETE("api/v2/workspace/boards/{boardId}/rows/{rowId}")
     suspend fun deleteRow(
+        @Header("X-CSRF-Token") csrfToken: String,
         @Header("Authorization") token: String,
         @Path("boardId") boardId: String,
         @Path("rowId") rowId: String
     )
 }
 
-// Request/Response Models
+// Request/Response Models for v2 API
 
-data class LoginRequest(
+data class LoginRequestV2(
     val email: String,
     val password: String
 )
 
-data class AuthResponse(
+data class AuthResponseV2(
     val token: String,
     val user: UserInfo
+)
+
+data class CsrfResponse(
+    val token: String
 )
 
 data class UserInfo(
