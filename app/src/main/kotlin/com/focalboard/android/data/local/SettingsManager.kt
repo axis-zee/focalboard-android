@@ -61,8 +61,10 @@ class SettingsManager(private val context: Context) {
             preferences[USER_ID] = user.id
             preferences[USER_EMAIL] = user.email
             preferences[USER_USERNAME] = user.username
-            if (user.displayName.isNotEmpty()) {
-                preferences[USER_DISPLAY_NAME] = user.displayName
+            user.displayName?.let { name ->
+                if (name.isNotEmpty()) {
+                    preferences[USER_DISPLAY_NAME] = name
+                }
             }
         }
     }
