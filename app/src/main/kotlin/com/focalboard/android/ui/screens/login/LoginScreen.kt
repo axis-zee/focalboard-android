@@ -1,19 +1,29 @@
 package com.focalboard.android.ui.screens.login
 
+import android.content.Context
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.focalboard.android.data.local.SettingsManager
+import com.focalboard.android.data.repository.AuthRepository
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(
     onLoginSuccess: () -> Unit
 ) {
+    val context = LocalContext.current
+    val coroutineScope = rememberCoroutineScope()
+    val settingsManager = remember { SettingsManager(context) }
+    val authRepository = remember { AuthRepository(settingsManager) }
+    
     var serverUrl by remember { mutableStateOf("") }
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -107,9 +117,28 @@ fun LoginScreen(
                 onClick = {
                     if (serverUrl.isNotEmpty() && username.isNotEmpty() && password.isNotEmpty()) {
                         isLoading = true
-                        // TODO: Implement actual login logic
-                        // For now, just simulate success
-                        // onLoginSuccess()
+                        error = null
+                        
+                        coroutineScope.launch {
+                            try {
+                                // Attempt login
+                                val result = authRepository.login(serverUrl, username, password)
+                                
+                                result.fold(
+                                    onSuccess = { 
+                                        // Login successful - server URL and token already saved by AuthRepository
+                                        onLoginSuccess()
+                                    },
+                                    onFailure = { exception ->
+                                        error = "Connection error: ${exception.message}"
+                                        isLoading = false
+                                    }
+                                )
+                            } catch (e: Exception) {
+                                error = "Connection error: ${e.message}"
+                                isLoading = false
+                            }
+                        }
                     }
                 },
                 enabled = serverUrl.isNotEmpty() && username.isNotEmpty() && password.isNotEmpty() && !isLoading,
