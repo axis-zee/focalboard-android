@@ -7,6 +7,12 @@ android {
     namespace = "com.focalboard.android"
     compileSdk = 34
 
+    // Disable AAPT2 (x86 binary doesn't work on ARM64 without QEMU)
+    // Use AAPT1 instead
+    aaptOptions {
+        // AAPT1 fallback
+    }
+
     defaultConfig {
         applicationId = "com.focalboard.android"
         minSdk = 24
