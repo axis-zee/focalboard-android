@@ -457,3 +457,355 @@
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main beaf20a] chore: auto-save progress 2026-04-07 08:30
+ 311 files changed, 19271 insertions(+), 3 deletions(-)
+ create mode 100644 .gradle/8.2/checksums/md5-checksums.bin
+ create mode 100644 .gradle/8.2/checksums/sha1-checksums.bin
+ create mode 100644 .gradle/8.2/dependencies-accessors/dependencies-accessors.lock
+ create mode 100644 .gradle/8.2/dependencies-accessors/gc.properties
+ create mode 100644 .gradle/8.2/executionHistory/executionHistory.bin
+ create mode 100644 .gradle/8.2/executionHistory/executionHistory.lock
+ create mode 100644 .gradle/8.2/fileHashes/fileHashes.bin
+ create mode 100644 .gradle/8.2/fileHashes/resourceHashesCache.bin
+ create mode 100644 .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ create mode 100644 .gradle/buildOutputCleanup/cache.properties
+ create mode 100644 .gradle/buildOutputCleanup/outputFiles.bin
+ create mode 100644 .gradle/file-system.probe
+ create mode 100644 app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+ create mode 100644 app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml
+ create mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+ create mode 100644 app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+ create mode 100644 app/build/intermediates/incremental/debug/packageDebugResources/merged.dir/values/values.xml
+ create mode 100644 app/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+ create mode 100644 app/build/intermediates/incremental/mergeDebugAssets/merger.xml
+ create mode 100644 app/build/intermediates/incremental/mergeDebugShaders/merger.xml
+ create mode 100644 app/build/intermediates/local_only_symbol_list/debug/R-def.txt
+ create mode 100644 app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+ create mode 100644 app/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+ create mode 100644 app/build/intermediates/merged_manifests/debug/AndroidManifest.xml
+ create mode 100644 app/build/intermediates/merged_manifests/debug/output-metadata.json
+ create mode 100644 app/build/intermediates/merged_res/debug/values-af_values-af.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-am_values-am.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ar_values-ar.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-as_values-as.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-az_values-az.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-be_values-be.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-bg_values-bg.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-bn_values-bn.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-bs_values-bs.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ca_values-ca.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-cs_values-cs.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-da_values-da.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-de_values-de.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-el_values-el.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-en-rAU_values-en-rAU.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-en-rCA_values-en-rCA.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-en-rGB_values-en-rGB.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-en-rIN_values-en-rIN.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-en-rXC_values-en-rXC.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-es-rUS_values-es-rUS.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-es_values-es.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-et_values-et.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-eu_values-eu.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-fa_values-fa.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-fi_values-fi.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-fr-rCA_values-fr-rCA.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-fr_values-fr.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-gl_values-gl.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-gu_values-gu.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-hi_values-hi.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-hr_values-hr.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-hu_values-hu.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-hy_values-hy.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-in_values-in.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-is_values-is.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-it_values-it.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-iw_values-iw.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ja_values-ja.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ka_values-ka.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-kk_values-kk.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-km_values-km.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-kn_values-kn.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ko_values-ko.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ky_values-ky.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-lo_values-lo.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-lt_values-lt.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-lv_values-lv.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-mk_values-mk.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ml_values-ml.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-mn_values-mn.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-mr_values-mr.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ms_values-ms.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-my_values-my.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-nb_values-nb.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ne_values-ne.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-nl_values-nl.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-or_values-or.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-pa_values-pa.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-pl_values-pl.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-pt-rBR_values-pt-rBR.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-pt-rPT_values-pt-rPT.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-pt_values-pt.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ro_values-ro.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ru_values-ru.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-si_values-si.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sk_values-sk.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sl_values-sl.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sq_values-sq.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sr_values-sr.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sv_values-sv.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-sw_values-sw.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ta_values-ta.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-te_values-te.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-th_values-th.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-tl_values-tl.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-tr_values-tr.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-uk_values-uk.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-ur_values-ur.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-uz_values-uz.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-v16_values-v16.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-v21_values-v21.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-vi_values-vi.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-zh-rCN_values-zh-rCN.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-zh-rHK_values-zh-rHK.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-zh-rTW_values-zh-rTW.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values-zu_values-zu.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/values_values.arsc.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/xml_backup_rules.xml.flat
+ create mode 100644 app/build/intermediates/merged_res/debug/xml_data_extraction_rules.xml.flat
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json
+ create mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json
+ create mode 100644 app/build/intermediates/navigation_json/debug/navigation.json
+ create mode 100644 app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml
+ create mode 100644 app/build/intermediates/packaged_manifests/debug/output-metadata.json
+ create mode 100644 app/build/intermediates/packaged_res/debug/values/values.xml
+ create mode 100644 app/build/intermediates/packaged_res/debug/xml/backup_rules.xml
+ create mode 100644 app/build/intermediates/packaged_res/debug/xml/data_extraction_rules.xml
+ create mode 100644 app/build/intermediates/source_set_path_map/debug/file-map.txt
+ create mode 100644 app/build/outputs/logs/manifest-merger-debug-report.txt
+ create mode 100755 scripts/build-in-docker.sh
+ mode change 100644 => 100755 scripts/build.sh
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-07 08:30:01
+
+### 📁 Recent Commits
+1c91b7f chore: auto-save progress 2026-04-07 08:00
+3a82ba1 chore: auto-save progress 2026-04-07 00:33
+3de8653 chore: Add cron backup script
+5f41b5e feat: Add Focalboard API client and auth repository
+14667ff chore: Add progress report script for auto-backup
+
+### 📊 Repository Stats
+- **Total commits:** 9
+- **Total files:** 342
+- **Total lines of code:** 8849
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/checksums/checksums.lock
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M app/build.gradle.kts
+ M build.gradle.kts
+ M gradle.properties
+ M local.properties
+ M progress.log
+ M scripts/build.sh
+?? .gradle/8.2/checksums/md5-checksums.bin
+?? .gradle/8.2/checksums/sha1-checksums.bin
+?? .gradle/8.2/dependencies-accessors/
+?? .gradle/8.2/executionHistory/
+?? .gradle/8.2/fileHashes/fileHashes.bin
+?? .gradle/8.2/fileHashes/resourceHashesCache.bin
+?? .gradle/buildOutputCleanup/
+?? .gradle/file-system.probe
+?? app/build/
+?? scripts/build-in-docker.sh
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
