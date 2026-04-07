@@ -12,15 +12,15 @@ class AuthRepository(
     private val apiService = ApiService()
     
     val isLoggedIn: Boolean
-        get() = settingsManager.getAuthToken() != null
+        get() = TODO("Check auth token in coroutine context")
     
-    val currentServerUrl: String?
+    val currentServerUrl: Flow<String?>
         get() = settingsManager.getServerUrl()
     
-    val currentToken: String?
+    val currentToken: Flow<String?>
         get() = settingsManager.getAuthToken()
     
-    val currentUser: UserInfo?
+    val currentUser: Flow<UserInfo?>
         get() = settingsManager.getUserInfo()
     
     suspend fun login(serverUrl: String, email: String, password: String): Result<AuthResponse> {
@@ -41,10 +41,10 @@ class AuthRepository(
         }
     }
     
-    fun logout() {
+    suspend fun logout() {
         settingsManager.clearAuth()
     }
     
-    fun getServerUrl(): String? = settingsManager.getServerUrl()
-    fun getAuthToken(): String? = settingsManager.getAuthToken()
+    fun getServerUrl(): Flow<String?> = settingsManager.getServerUrl()
+    fun getAuthToken(): Flow<String?> = settingsManager.getAuthToken()
 }

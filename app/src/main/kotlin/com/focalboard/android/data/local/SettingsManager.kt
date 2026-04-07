@@ -27,9 +27,8 @@ class SettingsManager(private val context: Context) {
         preferences[SERVER_URL]
     }
     
-    fun getAuthToken(): String? {
-        // This is a simplified version - in production, use proper async access
-        return null // TODO: Implement proper sync access
+    fun getAuthToken(): Flow<String?> = dataStore.data.map { preferences ->
+        preferences[AUTH_TOKEN]
     }
     
     suspend fun saveServerUrl(url: String) {
@@ -44,8 +43,17 @@ class SettingsManager(private val context: Context) {
         }
     }
     
-    fun getUserInfo(): UserInfo? {
-        return null // TODO: Implement proper sync access
+    fun getUserInfo(): Flow<UserInfo?> = dataStore.data.map { preferences ->
+        val id = preferences[USER_ID]
+        val email = preferences[USER_EMAIL]
+        val username = preferences[USER_USERNAME]
+        val displayName = preferences[USER_DISPLAY_NAME]
+        
+        if (id != null && email != null) {
+            UserInfo(id, email, username ?: "", displayName ?: "")
+        } else {
+            null
+        }
     }
     
     suspend fun saveUserInfo(user: UserInfo) {
@@ -53,7 +61,9 @@ class SettingsManager(private val context: Context) {
             preferences[USER_ID] = user.id
             preferences[USER_EMAIL] = user.email
             preferences[USER_USERNAME] = user.username
-            preferences[USER_DISPLAY_NAME] = user.displayName
+            if (user.displayName.isNotEmpty()) {
+                preferences[USER_DISPLAY_NAME] = user.displayName
+            }
         }
     }
     
