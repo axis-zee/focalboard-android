@@ -53,7 +53,7 @@ fun MainScreen() {
                 verticalArrangement = Arrangement.Center
             ) {
                 Icon(
-                    imageVector = Icons.Default.Description,
+                    imageVector = Icons.Default.Info,
                     contentDescription = null,
                     modifier = Modifier.size(128.dp),
                     tint = MaterialTheme.colorScheme.primary

@@ -4,24 +4,7 @@
             "outputFile": "com.focalboard.android.app-mergeDebugResources-54:/values-ne/values-ne.xml",
             "map": [
                 {
-                    "source": "/home/zaytun/.gradle/caches/transforms-3/882543c3de7de9493d65214559359f74/transformed/ui-release/res/values-ne/values-ne.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,204,294,388,485,571,653,749,836,922,988,1054,1144,1237,1314,1395,1463",
-                        "endColumns": "98,89,93,96,85,81,95,86,85,65,65,89,92,76,80,67,119",
-                        "endOffsets": "199,289,383,480,566,648,744,831,917,983,1049,1139,1232,1309,1390,1458,1578"
-                    },
-                    "to": {
-                        "startLines": "13,14,47,48,50,52,53,54,55,56,57,58,59,61,65,66,67",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1301,1400,5249,5343,5511,5681,5763,5859,5946,6032,6098,6164,6254,6434,6801,6882,6950",
-                        "endColumns": "98,89,93,96,85,81,95,86,85,65,65,89,92,76,80,67,119",
-                        "endOffsets": "1395,1485,5338,5435,5592,5758,5854,5941,6027,6093,6159,6249,6342,6506,6877,6945,7065"
-                    }
-                },
-                {
-                    "source": "/home/zaytun/.gradle/caches/transforms-3/f45e58d2f946f5c29d4b6d93a6918ddc/transformed/material3-1.1.2/res/values-ne/values-ne.xml",
+                    "source": "/home/zaytun/.gradle/caches/transforms-3/6bdeb62c9fb368d394ab2a906f4149cd/transformed/material3-1.1.2/res/values-ne/values-ne.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/res/values-ne/values-ne.xml",
+                    "source": "/home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/res/values-ne/values-ne.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "581,684,787,889,995,1093,1193,6597",
                         "endColumns": "102,102,101,105,97,99,107,100",
                         "endOffsets": "679,782,884,990,1088,1188,1296,6693"
+                    }
+                },
+                {
+                    "source": "/home/zaytun/.gradle/caches/transforms-3/c79d9d4c7c9f2b678ebeae0188f44944/transformed/ui-release/res/values-ne/values-ne.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,204,294,388,485,571,653,749,836,922,988,1054,1144,1237,1314,1395,1463",
+                        "endColumns": "98,89,93,96,85,81,95,86,85,65,65,89,92,76,80,67,119",
+                        "endOffsets": "199,289,383,480,566,648,744,831,917,983,1049,1139,1232,1309,1390,1458,1578"
+                    },
+                    "to": {
+                        "startLines": "13,14,47,48,50,52,53,54,55,56,57,58,59,61,65,66,67",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1301,1400,5249,5343,5511,5681,5763,5859,5946,6032,6098,6164,6254,6434,6801,6882,6950",
+                        "endColumns": "98,89,93,96,85,81,95,86,85,65,65,89,92,76,80,67,119",
+                        "endOffsets": "1395,1485,5338,5435,5592,5758,5854,5941,6027,6093,6159,6249,6342,6506,6877,6945,7065"
                     }
                 }
             ]

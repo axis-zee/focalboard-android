@@ -4,62 +4,62 @@ ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/Andr
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
-MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/fa4c0bf9b24fd400b5eaff1413a8be28/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/2feac5d290e9c3495b3448dd1d497631/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/b7dc3caae9d2688bf309bf6327f7092d/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/be89769fde60b230c133c6fcdd70160d/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/73e24739b82e910ea99d38e7501c13aa/transformed/navigation-compose-2.7.5/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/f45e58d2f946f5c29d4b6d93a6918ddc/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f57e584ef81daaffb1867c0f1df0148a/transformed/activity-1.8.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/3572c220cc64f60e04c07ffe3d5a3eee/transformed/activity-ktx-1.8.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1c15447cad12ce24bf413f4ffbab575/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d2b4899e6d25993854b86dd0a7605a03/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/938bda306740faec618c7eab3319206e/transformed/material-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/83046eb41fa746be354899613b18d61a/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/55778da9291ee71e2acbf6849cd9fc9c/transformed/animation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/10e7b395a82309fb6b97adfdfdf6a3a0/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1916c2abc33a1eab4afffb40296bc41/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05e04faf5d21242b2a3cd60805db303c/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05c6e38d9f2b2b0d34598c44f5c96288/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/2852f72386033ee8b0d076132a34bd11/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/77cd12fbe1a14fde6f1b47ea83209a6a/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d1bc480a6512c1a33b10760404edc686/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9b839bd7ecccfd43b1a3dea246be8faa/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/b80b3f1df9bcff9b54e389197ddd9c20/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f79591e30224b060eb4f31fb0320c7bc/transformed/activity-compose-1.8.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e6c18ac2c558b92a428c1f37fdd67c6e/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6fd4f406511116d075ae3e402fb7694c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/a6d22ceab4d9c1176ccdb44f7ec0dd4b/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/54d5ae2f5c97f5bc10d3c270fe939186/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/9d6aeb57d00f233d527bcf3de1e473b5/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/c1608a7fc20f2b8996fc5b93f630043a/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d0ea7566926eef7a7600eb7bce150c8b/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/2d671069c2d8d58b794cf0b2c46fbbf9/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/30b0a31c2aa793a9a6001aac095a3770/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/882543c3de7de9493d65214559359f74/transformed/ui-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/1189b618054ce42efe8647d4125627f0/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/a277def0d93fab762cf9e488491dace5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/4aefec56d7193ade62616eebdd78079c/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/80930cbf4f03df1398b8be4a19efc40b/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/cd62b0a9328ae50af596ca7e2aa45fae/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/4b3660cd05942e930879464a7dc5875e/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/0f7eb2ed080927a1ea29e3309f99b90c/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2387e94e30f36715d3cc57c577999edb/transformed/datastore-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a97177b713778e3eff172529f9db0ae7/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c71f19f855ee69459e5c7cd5fd355309/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d673fcf0b99a1a5dd0a627e78dc242ab/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/cab1fafa36f6939c069ddd0136cf8616/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/c1494802bca27a630969404a3eee81b7/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/8a3fa71ab32f219f8bf2d56b9f966a91/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/d6c1c74d06179d995eecc9f8df68058c/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/0d92b13df78d11c5e07d0ceed1c6147e/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/95d1fd865c4a7bc7d06880e298db34f5/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/1eeaf2a2f8247d266211fff8256daaa5/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/548842d79fe149f744c0aef0b384f435/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/56a0982d6019364eb8f555e1276784f0/transformed/navigation-compose-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/6bdeb62c9fb368d394ab2a906f4149cd/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/60a5e258ae3545b0d6583026e23b2af9/transformed/activity-1.8.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/9000ed3bf3b9a184ff1c5ef021bbf0f8/transformed/activity-ktx-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/89525a4ec82165c50079bb38330c6c99/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/bf7d5159115a57ea4a9b805bb9f57776/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/39d2641fb623cf3c48094f7fe573dd9b/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff34531b075655eb5c9d6a20144631ac/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c416a83fb4405bed298d78945c4f4f64/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9f802bb80af2a56bf2dc4bddff3beb23/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/4b0d42400f96d1ec2d96c4c9b003af8a/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6ef1538e67bd98aab7e26201114ecba9/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6a95a441226cc4ed6690d7b3f61530fd/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/da46fb7d53f6aea0375ec76e7f9492eb/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff00414c1502a05c214a422dbf875cf0/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a7734f5cf7ad063c944514aeffdadb57/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/fbedccbb276699569142b8dc187f3250/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/1442bd699cc682ef62c6efc965b50c4f/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/832d0ac6f133eb2740a0a8e506dbb1e5/transformed/activity-compose-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/921f7dfc2fd0231ed60005d84a5416eb/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e56d4342888433bdee56ae6e906994a8/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d8af9b4543f294a4b2e3469decab1a42/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/009b6d0730a1b23ad9e5df939aea4699/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/6f26b3f9f2293cb8e32d4e91903a4563/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6ea54a6802f6ba9c09d512ed3a1fc2fe/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/1d8c30f8e63f2d5520cea66126158664/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/dd8edbef220e33c175003acb8ebc4486/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/98f7d5552b1f8de2417f39c6d24e2938/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c79d9d4c7c9f2b678ebeae0188f44944/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/742251557b0d3c08eafd5ea5eeafc023/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/f568f0e4b5642a0459a4eb7ee4bfdb64/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/796f7b4152d5c91b46315f7cc27426b8/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/26dd908e285d18a52639fa0d8617b0a3/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/56d669072016c0dd265497899bdaea55/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/3ab54b2faa27d976d85c2b2801a8b7c8/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/e92b45f26412fab8034401f28df31ced/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/95384789e17846e75aa4abf6b1f7360e/transformed/datastore-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/8ebfd3e274403a22986fbd2076d3e41b/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/7c3ce5937c949587eb30b6fbf7a8cec1/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/3348d4a0a95abc20df9b7c515f2365a5/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/2a27ec6f6e045243787d2a1ecaa4f1dc/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/b6d079a363c0b55b73c11ed738acaf1d/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/5e9c8ce5a1a7403a9e5170dde9e086ac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2f7664737e8c0bf0e163e0d4c59ac9a0/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 	package
 		INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -81,28 +81,28 @@ ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/Andr
 application
 ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-30:19
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-30:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/8a3fa71ab32f219f8bf2d56b9f966a91/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/8a3fa71ab32f219f8bf2d56b9f966a91/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/5e9c8ce5a1a7403a9e5170dde9e086ac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/5e9c8ce5a1a7403a9e5170dde9e086ac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
@@ -145,231 +145,231 @@ uses-sdk
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/fa4c0bf9b24fd400b5eaff1413a8be28/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/fa4c0bf9b24fd400b5eaff1413a8be28/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/2feac5d290e9c3495b3448dd1d497631/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/2feac5d290e9c3495b3448dd1d497631/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/b7dc3caae9d2688bf309bf6327f7092d/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/b7dc3caae9d2688bf309bf6327f7092d/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/be89769fde60b230c133c6fcdd70160d/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/be89769fde60b230c133c6fcdd70160d/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/73e24739b82e910ea99d38e7501c13aa/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/73e24739b82e910ea99d38e7501c13aa/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/f45e58d2f946f5c29d4b6d93a6918ddc/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/f45e58d2f946f5c29d4b6d93a6918ddc/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f57e584ef81daaffb1867c0f1df0148a/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f57e584ef81daaffb1867c0f1df0148a/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/3572c220cc64f60e04c07ffe3d5a3eee/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/3572c220cc64f60e04c07ffe3d5a3eee/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1c15447cad12ce24bf413f4ffbab575/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1c15447cad12ce24bf413f4ffbab575/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d2b4899e6d25993854b86dd0a7605a03/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d2b4899e6d25993854b86dd0a7605a03/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/938bda306740faec618c7eab3319206e/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/938bda306740faec618c7eab3319206e/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/83046eb41fa746be354899613b18d61a/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/83046eb41fa746be354899613b18d61a/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/55778da9291ee71e2acbf6849cd9fc9c/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/55778da9291ee71e2acbf6849cd9fc9c/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/10e7b395a82309fb6b97adfdfdf6a3a0/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/10e7b395a82309fb6b97adfdfdf6a3a0/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1916c2abc33a1eab4afffb40296bc41/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c1916c2abc33a1eab4afffb40296bc41/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05e04faf5d21242b2a3cd60805db303c/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05e04faf5d21242b2a3cd60805db303c/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05c6e38d9f2b2b0d34598c44f5c96288/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/05c6e38d9f2b2b0d34598c44f5c96288/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/2852f72386033ee8b0d076132a34bd11/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/2852f72386033ee8b0d076132a34bd11/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/77cd12fbe1a14fde6f1b47ea83209a6a/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/77cd12fbe1a14fde6f1b47ea83209a6a/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d1bc480a6512c1a33b10760404edc686/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d1bc480a6512c1a33b10760404edc686/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9b839bd7ecccfd43b1a3dea246be8faa/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9b839bd7ecccfd43b1a3dea246be8faa/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/b80b3f1df9bcff9b54e389197ddd9c20/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/b80b3f1df9bcff9b54e389197ddd9c20/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f79591e30224b060eb4f31fb0320c7bc/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/f79591e30224b060eb4f31fb0320c7bc/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e6c18ac2c558b92a428c1f37fdd67c6e/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e6c18ac2c558b92a428c1f37fdd67c6e/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6fd4f406511116d075ae3e402fb7694c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6fd4f406511116d075ae3e402fb7694c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/a6d22ceab4d9c1176ccdb44f7ec0dd4b/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/a6d22ceab4d9c1176ccdb44f7ec0dd4b/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/54d5ae2f5c97f5bc10d3c270fe939186/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/54d5ae2f5c97f5bc10d3c270fe939186/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/9d6aeb57d00f233d527bcf3de1e473b5/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/9d6aeb57d00f233d527bcf3de1e473b5/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/c1608a7fc20f2b8996fc5b93f630043a/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/c1608a7fc20f2b8996fc5b93f630043a/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d0ea7566926eef7a7600eb7bce150c8b/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d0ea7566926eef7a7600eb7bce150c8b/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/2d671069c2d8d58b794cf0b2c46fbbf9/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/2d671069c2d8d58b794cf0b2c46fbbf9/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/30b0a31c2aa793a9a6001aac095a3770/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/30b0a31c2aa793a9a6001aac095a3770/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/882543c3de7de9493d65214559359f74/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/882543c3de7de9493d65214559359f74/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/1189b618054ce42efe8647d4125627f0/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/1189b618054ce42efe8647d4125627f0/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/a277def0d93fab762cf9e488491dace5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/a277def0d93fab762cf9e488491dace5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/4aefec56d7193ade62616eebdd78079c/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/4aefec56d7193ade62616eebdd78079c/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/80930cbf4f03df1398b8be4a19efc40b/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/80930cbf4f03df1398b8be4a19efc40b/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/cd62b0a9328ae50af596ca7e2aa45fae/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/cd62b0a9328ae50af596ca7e2aa45fae/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/4b3660cd05942e930879464a7dc5875e/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/4b3660cd05942e930879464a7dc5875e/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/0f7eb2ed080927a1ea29e3309f99b90c/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/0f7eb2ed080927a1ea29e3309f99b90c/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2387e94e30f36715d3cc57c577999edb/transformed/datastore-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2387e94e30f36715d3cc57c577999edb/transformed/datastore-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a97177b713778e3eff172529f9db0ae7/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a97177b713778e3eff172529f9db0ae7/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c71f19f855ee69459e5c7cd5fd355309/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c71f19f855ee69459e5c7cd5fd355309/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d673fcf0b99a1a5dd0a627e78dc242ab/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/d673fcf0b99a1a5dd0a627e78dc242ab/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/cab1fafa36f6939c069ddd0136cf8616/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/cab1fafa36f6939c069ddd0136cf8616/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/c1494802bca27a630969404a3eee81b7/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/c1494802bca27a630969404a3eee81b7/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/8a3fa71ab32f219f8bf2d56b9f966a91/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/8a3fa71ab32f219f8bf2d56b9f966a91/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/d6c1c74d06179d995eecc9f8df68058c/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/d6c1c74d06179d995eecc9f8df68058c/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/0d92b13df78d11c5e07d0ceed1c6147e/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/0d92b13df78d11c5e07d0ceed1c6147e/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/95d1fd865c4a7bc7d06880e298db34f5/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/95d1fd865c4a7bc7d06880e298db34f5/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/1eeaf2a2f8247d266211fff8256daaa5/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/1eeaf2a2f8247d266211fff8256daaa5/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/548842d79fe149f744c0aef0b384f435/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/548842d79fe149f744c0aef0b384f435/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/56a0982d6019364eb8f555e1276784f0/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] /home/zaytun/.gradle/caches/transforms-3/56a0982d6019364eb8f555e1276784f0/transformed/navigation-compose-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/6bdeb62c9fb368d394ab2a906f4149cd/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/zaytun/.gradle/caches/transforms-3/6bdeb62c9fb368d394ab2a906f4149cd/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/60a5e258ae3545b0d6583026e23b2af9/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] /home/zaytun/.gradle/caches/transforms-3/60a5e258ae3545b0d6583026e23b2af9/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/9000ed3bf3b9a184ff1c5ef021bbf0f8/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/zaytun/.gradle/caches/transforms-3/9000ed3bf3b9a184ff1c5ef021bbf0f8/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/89525a4ec82165c50079bb38330c6c99/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/89525a4ec82165c50079bb38330c6c99/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/bf7d5159115a57ea4a9b805bb9f57776/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/bf7d5159115a57ea4a9b805bb9f57776/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/39d2641fb623cf3c48094f7fe573dd9b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/39d2641fb623cf3c48094f7fe573dd9b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff34531b075655eb5c9d6a20144631ac/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff34531b075655eb5c9d6a20144631ac/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c416a83fb4405bed298d78945c4f4f64/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c416a83fb4405bed298d78945c4f4f64/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9f802bb80af2a56bf2dc4bddff3beb23/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/9f802bb80af2a56bf2dc4bddff3beb23/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/4b0d42400f96d1ec2d96c4c9b003af8a/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/4b0d42400f96d1ec2d96c4c9b003af8a/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6ef1538e67bd98aab7e26201114ecba9/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6ef1538e67bd98aab7e26201114ecba9/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6a95a441226cc4ed6690d7b3f61530fd/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/6a95a441226cc4ed6690d7b3f61530fd/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/da46fb7d53f6aea0375ec76e7f9492eb/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/da46fb7d53f6aea0375ec76e7f9492eb/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff00414c1502a05c214a422dbf875cf0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/ff00414c1502a05c214a422dbf875cf0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a7734f5cf7ad063c944514aeffdadb57/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a7734f5cf7ad063c944514aeffdadb57/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/fbedccbb276699569142b8dc187f3250/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/fbedccbb276699569142b8dc187f3250/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/1442bd699cc682ef62c6efc965b50c4f/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/1442bd699cc682ef62c6efc965b50c4f/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/832d0ac6f133eb2740a0a8e506dbb1e5/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/zaytun/.gradle/caches/transforms-3/832d0ac6f133eb2740a0a8e506dbb1e5/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/921f7dfc2fd0231ed60005d84a5416eb/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/zaytun/.gradle/caches/transforms-3/921f7dfc2fd0231ed60005d84a5416eb/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e56d4342888433bdee56ae6e906994a8/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/zaytun/.gradle/caches/transforms-3/e56d4342888433bdee56ae6e906994a8/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d8af9b4543f294a4b2e3469decab1a42/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/d8af9b4543f294a4b2e3469decab1a42/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/009b6d0730a1b23ad9e5df939aea4699/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/zaytun/.gradle/caches/transforms-3/009b6d0730a1b23ad9e5df939aea4699/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/6f26b3f9f2293cb8e32d4e91903a4563/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/zaytun/.gradle/caches/transforms-3/6f26b3f9f2293cb8e32d4e91903a4563/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6ea54a6802f6ba9c09d512ed3a1fc2fe/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6ea54a6802f6ba9c09d512ed3a1fc2fe/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/1d8c30f8e63f2d5520cea66126158664/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/zaytun/.gradle/caches/transforms-3/1d8c30f8e63f2d5520cea66126158664/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/dd8edbef220e33c175003acb8ebc4486/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/zaytun/.gradle/caches/transforms-3/dd8edbef220e33c175003acb8ebc4486/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/98f7d5552b1f8de2417f39c6d24e2938/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/zaytun/.gradle/caches/transforms-3/98f7d5552b1f8de2417f39c6d24e2938/transformed/lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c79d9d4c7c9f2b678ebeae0188f44944/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/c79d9d4c7c9f2b678ebeae0188f44944/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/742251557b0d3c08eafd5ea5eeafc023/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/zaytun/.gradle/caches/transforms-3/742251557b0d3c08eafd5ea5eeafc023/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/f568f0e4b5642a0459a4eb7ee4bfdb64/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/zaytun/.gradle/caches/transforms-3/f568f0e4b5642a0459a4eb7ee4bfdb64/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/796f7b4152d5c91b46315f7cc27426b8/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/zaytun/.gradle/caches/transforms-3/796f7b4152d5c91b46315f7cc27426b8/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/26dd908e285d18a52639fa0d8617b0a3/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/zaytun/.gradle/caches/transforms-3/26dd908e285d18a52639fa0d8617b0a3/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/56d669072016c0dd265497899bdaea55/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /home/zaytun/.gradle/caches/transforms-3/56d669072016c0dd265497899bdaea55/transformed/datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/3ab54b2faa27d976d85c2b2801a8b7c8/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/zaytun/.gradle/caches/transforms-3/3ab54b2faa27d976d85c2b2801a8b7c8/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/e92b45f26412fab8034401f28df31ced/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/zaytun/.gradle/caches/transforms-3/e92b45f26412fab8034401f28df31ced/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/95384789e17846e75aa4abf6b1f7360e/transformed/datastore-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] /home/zaytun/.gradle/caches/transforms-3/95384789e17846e75aa4abf6b1f7360e/transformed/datastore-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/8ebfd3e274403a22986fbd2076d3e41b/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/zaytun/.gradle/caches/transforms-3/8ebfd3e274403a22986fbd2076d3e41b/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/7c3ce5937c949587eb30b6fbf7a8cec1/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/7c3ce5937c949587eb30b6fbf7a8cec1/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/3348d4a0a95abc20df9b7c515f2365a5/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/3348d4a0a95abc20df9b7c515f2365a5/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/2a27ec6f6e045243787d2a1ecaa4f1dc/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/zaytun/.gradle/caches/transforms-3/2a27ec6f6e045243787d2a1ecaa4f1dc/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/b6d079a363c0b55b73c11ed738acaf1d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/zaytun/.gradle/caches/transforms-3/b6d079a363c0b55b73c11ed738acaf1d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/5e9c8ce5a1a7403a9e5170dde9e086ac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/zaytun/.gradle/caches/transforms-3/5e9c8ce5a1a7403a9e5170dde9e086ac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2f7664737e8c0bf0e163e0d4c59ac9a0/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/zaytun/.gradle/caches/transforms-3/2f7664737e8c0bf0e163e0d4c59ac9a0/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 	android:targetSdkVersion
 		INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
 activity#androidx.activity.ComponentActivity
-ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
 	android:exported
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/131e0fcbf3680cf581a36d756c856f3b/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] /home/zaytun/.gradle/caches/transforms-3/a6287380bac5098f355aa5e5f75ac805/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
 activity#androidx.compose.ui.tooling.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
 	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/613b815c19bad1c47584fce7a013954b/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] /home/zaytun/.gradle/caches/transforms-3/0377100786aa4edb3f9405e3e6f9c43d/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/fc55183ff15ec9d0c42a0809a9d63a8e/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches/transforms-3/34f8f5ba5630f3837b75d7f5073ff31b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/d724278a1ce328a42e07b0087e7dd3b7/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/zaytun/.gradle/caches/transforms-3/5ff0b8150c2f6dec8fe256d42b2a6c09/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/af04c0ca66b789d0ef9ec012389e33a9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/zaytun/.gradle/caches/transforms-3/6077fed1c75906019e081ec73a8cca51/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 permission#com.focalboard.android.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 uses-permission#com.focalboard.android.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/085342fa03cff1359ad74cc69ac86d7b/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.12.0] /home/zaytun/.gradle/caches/transforms-3/d55c55e3bca04200e720b6ae46884470/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
 	tools:ignore
-		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/246b8cab323dc5d51868bc622d69932d/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/zaytun/.gradle/caches/transforms-3/a1f6d7d955f06d49b43efd8003416a63/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/92bff5d9c804ebb81357fdbb3f888f0e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/zaytun/.gradle/caches/transforms-3/a8aa69bdf5f5459e39cfe1684f993928/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
