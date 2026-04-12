@@ -10972,3 +10972,966 @@ b53fb24 chore: auto-save progress 2026-04-12 16:30
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main 7515ee2] chore: auto-save progress 2026-04-12 19:00
+ 820 files changed, 16417 insertions(+), 64507 deletions(-)
+ delete mode 100644 app/build.gradle
+ create mode 100644 app/build/intermediates/apk_ide_redirect_file/debug/redirect.txt
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_4/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_5/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_6/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_7/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_8/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_9/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_0/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_1/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_2/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_3/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_4/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_5/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_6/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_7/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_8/graph.bin
+ create mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_9/graph.bin
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+ create mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+ create mode 100644 app/build/intermediates/dex_archive_input_jar_hashes/debug/out
+ create mode 100644 app/build/intermediates/dex_number_of_buckets_file/debug/out
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+IH2XCATbmu0ukoj5IxXX3UqZ7k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+JhLjJXOVgPzSLiENRwKhXLu6c4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+TRDdd3p4mfeKWJ1XwORuJW+uhk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0N6lxdP+OpGrS2YTN_wuxm4PbGk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0txqChjcx3YV4PmlMQCEwJrxews=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1K1QSN8PWLbJyn6bQCkh0oQ1E0Y=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1o83RAq3tfFmqT03ETCC0VXOjBQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2OxNgs6AbiihIfUpeefMFnG3DxY=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3Qf5r_OxVwf6s2xUoe15VeyNNrg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/41lgecDnOWjHL4FTuhejBMHQSLI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5BDiHMB3Kg6y7+nsq2NvSAD6R1k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5M7w6IQsOvx_IvB92fpgMgKieYE=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/61wkOnCATzfmv14gdIOLnyxTaOA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7nbqrMAUs63+cPJ3eWZgQ08uGpo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8Be_h1mYYr2pjIWZCngRzmyqtfo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8ZoXbp4ROAW3WjetlkXjHKR2mhU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9kyoIOQNCzusEhw2weiwlrmJiBU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EeGJj1pNd8Xr4DyXHILwV+LWJaw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EkEiYoaAr3jAzcU99iiIHPr8w3Q=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/F0o9f146yBp0snWC40Cj6A+Ex2Q=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GWRFgHVVXyNp1i_sFoslmCf6_2E=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HKybQWi3n+Dv75n5vk+quODJL4I=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HSF9xj3K7DpwhZJAED6vjp9Bol0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6OIsmGbQcg1kmfh_y1R0xXhzNU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6PCRaZimsDOcz_RYz9cqf8Upog=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Jx2ACtPRDXlzjQlzglejy6KAUgQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/L7zWJE0gfXFnLH3hZjRv0RBvjWI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LkkU5+vpNfxxckYixpZQ99UC24A=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OwVHxuB+9K73FFhxNiI+YS3YJAg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PXXA5XiY11bh2DvMX1+hicUgWEI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PtvnDYobQ+q_jY_kY0OmgfXjD4M=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PwoX6vYO7wVv3mUTe1lgLZ8JI4s=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q641esvg4DilQ6RrhERgJwQ1jHQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QYHarRNMnilAyerIjIpwkmctUds=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RV9W3sCZza9tL3bZuO11GmKKq_0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RfNkY69A8SI36CYmL+3RvA1WlUs=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SxMKE142dNeEoPQEpaY9wbXbb0k=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TBHqOkO6agN_Wbp092VTqXTiUbg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TSpTeloO+DjLG24bbY8fsxAdnsU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TeV6SlKIRP0ajcnHiVfOiJC_Ywo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UeGSqC7bpXaDRxbzoGdtOlJdt4g=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UekLtfKlG6kiKvS9Phhkr5HnISk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Ueq2rk8kt3vwiU9bwHAnVt_WYV4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VBGqBo8gRIEZxGAEDLidO9Dztss=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WsbdFb+dl8ePjfy8WnHP216B0eg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/X7+oTTDkgxspRfdawY8tuMIPpiE=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YrCVQdLuwCHN8d2hKs37oq474Us=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZMjA2oYtQEyBM7SeZQn7mVobv7c=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZrV5ZB7HqoF7JSxhhhEOCs7lJeA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_F4FmLcqz0dfV2evxjarZB7yIX4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aVXv9LhoEzXunPQkUOnFXKlPKpg=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/c+5ECWR1yC8Qw3e88nw6Xk4NNAY=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cj4KONDmjSEUGhTrQaFRtoOIOK8=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/djFH0uLpoys5t+79vtYmnhLF5F8=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/eCfkPb8LMeSn_Y0pAd0ccXbHJJk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/euWylf0VRuHncRMxlXWUTQNuanw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fYpRjCheE7OXcA0aAUbWagDAdq0=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/figPCiO3xNXDgZa9nfSivK28bkU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hSLWilU_mqb1ushNob1fH5rvK+I=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ibnLgc0juzjAxAssKLx1+fHGGsw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jLOqDr8JxulDsHtPLjVOmgw4m7Y=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/kRU26mawdab9xTwwE99_P4R+a0M=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mgiR88UuhgLupMrrGUnkA+hocVo=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mqbU+DTmGSsLSbiUMoEaSxpxjQI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oqvCuyBa6k9l7pfxMrBzWKa1HeY=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rYpRUHizT2UqzIW_UV+XPjqVsxU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rc4_B7D9fZDARCqPdKAw1c4R7KY=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/t0je2h829hTRp45PdY2Kt1WjKAA=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tbAY+ZQn+2Usvtcj57BwX89ugCk=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tkT8ywPjVsKUGge4+WBRxY6zAQ4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tzbQlSxQACjQfi6t2a2imoVXevI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uEVBYrmWNUJzNiSfb9xcoLZNnPw=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uhruMAN_71VkQ3l+UATJWip9TzQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/v3dUycdqwBncVCU8wgvN3KgBueQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vKvIaLpSBIXZCDXtuFt0RKqNmi4=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/wdsMIQNMad+UTVQ3IjDgk5w+NbM=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yengta030sTmpPErg6xWaBPBYOU=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zDkUFZA3qTSjGYT+lCnY+rGsnNQ=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zljJSj4cFjHNuyvitAnBPgYHQHI=
+ create mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zyNAwtzdQyF66LJRtaztUmRTtfk=
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-land/values-land.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-port/values-port.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v17/values-v17.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v18/values-v18.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v22/values-v22.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v23/values-v23.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v24/values-v24.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v25/values-v25.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v26/values-v26.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v28/values-v28.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v31/values-v31.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v34/values-v34.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w400dp-port-v13/values-w400dp-port-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml
+ delete mode 100644 app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+ create mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0
+ create mode 100644 app/build/intermediates/java_res/debug/out/META-INF/app_debug.kotlin_module
+ create mode 100644 app/build/intermediates/merged_java_res/debug/base.jar
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-b+es+419_values-b+es+419.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-land_values-land.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-large-v4_values-large-v4.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-night-v8_values-night-v8.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-port_values-port.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-small-v4_values-small-v4.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v17_values-v17.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v18_values-v18.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v22_values-v22.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v23_values-v23.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v24_values-v24.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v25_values-v25.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v26_values-v26.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v28_values-v28.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v31_values-v31.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-v34_values-v34.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-watch-v20_values-watch-v20.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-watch-v21_values-watch-v21.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+es+419.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h320dp-port-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h360dp-land-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h480dp-land-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h550dp-port-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h720dp-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hdpi-v4.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-land.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-large-v4.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldltr-v21.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldrtl-v17.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-port.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-small-v4.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw600dp-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v17.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v18.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v22.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v23.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v24.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v25.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v26.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v28.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v31.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v34.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w320dp-land-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w360dp-port-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w400dp-port-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-land-v13.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v20.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v21.json
+ delete mode 100644 app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xlarge-v4.json
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_0.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_1.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_2.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_3.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_4.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_5.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_6.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_7.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_8.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_9.jar
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp$Companion.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/MainActivity.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService$cookieJar$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/AuthResponseV2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Board.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardCreateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRow.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowCreateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowUpdateRequest.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardView.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CellValue.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CsrfResponse.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Filter.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LoginRequestV2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/UserInfo.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ViewOptions.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$Companion.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$clearAuth$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManagerKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository$login$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Login.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Main.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.dex
+ create mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt.dex
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ create mode 100644 app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+ create mode 100644 app/build/outputs/apk/debug/app-debug.apk
+ create mode 100644 app/build/outputs/apk/debug/output-metadata.json
+ create mode 100644 app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/MainActivity.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService$cookieJar$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/AuthResponseV2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Board.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRow.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowUpdateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardView.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CellValue.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CsrfResponse.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Filter.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LoginRequestV2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/UserInfo.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ViewOptions.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$clearAuth$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManagerKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$login$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Login.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Main.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt.class
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-12 19:00:01
+
+### 📁 Recent Commits
+2a03e5a chore: auto-save progress 2026-04-12 18:30
+68ce9a8 feat: fix CSRF by adding X-Requested-With header and correct login format
+7b2d307 chore: auto-save progress 2026-04-12 18:00
+2e40151 chore: auto-save progress 2026-04-12 17:30
+70ec4da chore: auto-save progress 2026-04-12 17:00
+
+### 📊 Repository Stats
+- **Total commits:** 272
+- **Total files:** 799
+- **Total lines of code:** 9246
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/checksums/checksums.lock
+ M .gradle/8.2/checksums/md5-checksums.bin
+ M .gradle/8.2/checksums/sha1-checksums.bin
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/8.2/fileHashes/resourceHashesCache.bin
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ M .gradle/file-system.probe
+ D app/build.gradle
+ M app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+ M app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json
+ M app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+ M app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+ M app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+ M app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-land/values-land.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-port/values-port.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v17/values-v17.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v18/values-v18.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v22/values-v22.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v23/values-v23.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v24/values-v24.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v25/values-v25.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v26/values-v26.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v28/values-v28.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v31/values-v31.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v34/values-v34.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w400dp-port-v13/values-w400dp-port-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml
+ D app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+ M app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+ M app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+ M app/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+ M app/build/intermediates/merged_manifests/debug/AndroidManifest.xml
+ M app/build/intermediates/merged_manifests/debug/output-metadata.json
+ M app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/values-af_values-af.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-am_values-am.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ar_values-ar.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-as_values-as.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-az_values-az.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-b+es+419_values-b+es+419.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-be_values-be.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bg_values-bg.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bn_values-bn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bs_values-bs.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ca_values-ca.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-cs_values-cs.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-da_values-da.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-de_values-de.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-el_values-el.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rAU_values-en-rAU.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rCA_values-en-rCA.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rGB_values-en-rGB.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rIN_values-en-rIN.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rXC_values-en-rXC.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-es-rUS_values-es-rUS.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-es_values-es.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-et_values-et.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-eu_values-eu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fa_values-fa.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fi_values-fi.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fr-rCA_values-fr-rCA.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fr_values-fr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-gl_values-gl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-gu_values-gu.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hi_values-hi.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hr_values-hr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hu_values-hu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hy_values-hy.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-in_values-in.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-is_values-is.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-it_values-it.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-iw_values-iw.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ja_values-ja.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ka_values-ka.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-kk_values-kk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-km_values-km.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-kn_values-kn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ko_values-ko.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ky_values-ky.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-land_values-land.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-large-v4_values-large-v4.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lo_values-lo.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lt_values-lt.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lv_values-lv.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mk_values-mk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ml_values-ml.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mn_values-mn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mr_values-mr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ms_values-ms.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-my_values-my.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-nb_values-nb.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ne_values-ne.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-night-v8_values-night-v8.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-nl_values-nl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-or_values-or.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pa_values-pa.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pl_values-pl.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-port_values-port.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt-rBR_values-pt-rBR.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt-rPT_values-pt-rPT.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt_values-pt.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ro_values-ro.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ru_values-ru.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-si_values-si.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sk_values-sk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sl_values-sl.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-small-v4_values-small-v4.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sq_values-sq.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sr_values-sr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sv_values-sv.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sw_values-sw.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ta_values-ta.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-te_values-te.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-th_values-th.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-tl_values-tl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-tr_values-tr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-uk_values-uk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ur_values-ur.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-uz_values-uz.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-v16_values-v16.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v17_values-v17.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v18_values-v18.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-v21_values-v21.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v22_values-v22.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v23_values-v23.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v24_values-v24.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v25_values-v25.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v26_values-v26.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v28_values-v28.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v31_values-v31.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-v34_values-v34.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-vi_values-vi.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-watch-v20_values-watch-v20.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-watch-v21_values-watch-v21.arsc.flat
+ D app/build/intermediates/merged_res/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rCN_values-zh-rCN.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rHK_values-zh-rHK.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rTW_values-zh-rTW.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zu_values-zu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values_values.arsc.flat
+ M app/build/intermediates/merged_res/debug/xml_backup_rules.xml.flat
+ M app/build/intermediates/merged_res/debug/xml_data_extraction_rules.xml.flat
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+es+419.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h320dp-port-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h360dp-land-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h480dp-land-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h550dp-port-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h720dp-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hdpi-v4.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-land.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-large-v4.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldltr-v21.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldrtl-v17.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-port.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-small-v4.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw600dp-v13.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v17.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v18.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v22.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v23.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v24.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v25.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v26.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v28.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v31.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v34.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w320dp-land-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w360dp-port-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w400dp-port-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-land-v13.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v20.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v21.json
+ D app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xlarge-v4.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json
+ M app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml
+ M app/build/intermediates/packaged_manifests/debug/output-metadata.json
+ M app/build/intermediates/processed_res/debug/out/output-metadata.json
+ M app/build/intermediates/processed_res/debug/out/resources-debug.ap_
+ M app/build/intermediates/runtime_symbol_list/debug/R.txt
+ M app/build/intermediates/source_set_path_map/debug/file-map.txt
+ M app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt
+ M app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+ D app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+ M app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ M app/build/outputs/logs/manifest-merger-debug-report.txt
+ M app/src/main/kotlin/com/focalboard/android/data/api/ApiService.kt
+ M app/src/main/kotlin/com/focalboard/android/data/api/FocalboardApi.kt
+ M app/src/main/kotlin/com/focalboard/android/data/repository/AuthRepository.kt
+ M progress.log
+?? app/build/intermediates/apk_ide_redirect_file/
+?? app/build/intermediates/desugar_graph/
+?? app/build/intermediates/dex/debug/mergeProjectDexDebug/
+?? app/build/intermediates/dex_archive_input_jar_hashes/
+?? app/build/intermediates/dex_number_of_buckets_file/
+?? app/build/intermediates/incremental/debug-mergeJavaRes/
+?? app/build/intermediates/incremental/packageDebug/
+?? app/build/intermediates/java_res/
+?? app/build/intermediates/merged_java_res/
+?? app/build/intermediates/project_dex_archive/
+?? app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/
+?? app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+?? app/build/kotlin/compileDebugKotlin/classpath-snapshot/
+?? app/build/outputs/apk/
+?? app/build/tmp/
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
