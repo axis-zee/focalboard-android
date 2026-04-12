@@ -11,6 +11,12 @@ import retrofit2.http.*
 interface FocalboardApi {
     
     /**
+     * Get CSRF token from the server
+     */
+    @GET("api/v2/auth/csrf")
+    suspend fun getCsrfToken(): CsrfResponse
+    
+    /**
      * Login endpoint returns the auth token and sets CSRF cookie.
      * The login request requires X-Requested-With: XMLHttpRequest header
      * (automatically added by the API client interceptor).
