@@ -22,7 +22,7 @@ interface FocalboardApi {
      */
     @POST("api/v2/login")
     suspend fun login(
-        @Header("X-CSRF-Token") csrfToken: String,
+        @Header("X-Requested-With") xhrHeader: String = "XmlHttpRequest",
         @Body credentials: LoginRequestV2
     ): AuthResponseV2
     
@@ -124,7 +124,8 @@ interface FocalboardApi {
 // Request/Response Models for v2 API
 
 data class LoginRequestV2(
-    val email: String,
+    val type: String = "normal",
+    val username: String,
     val password: String
 )
 

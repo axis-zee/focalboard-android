@@ -35,19 +35,9 @@ class AuthRepository(
             
             val api = apiService.getFocalboardApi(normalizedUrl)
             
-            // Step 1: Get CSRF token
-            // Note: The v2 API may return HTML instead of JSON for CSRF endpoint
-            // In that case, we'll use a default token or extract from response
-            val csrfToken = try {
-                val csrfResponse = api.getCsrfToken()
-                csrfResponse.token
-            } catch (e: Exception) {
-                // Fallback: use "1" as default CSRF token (Focalboard default)
-                "1"
-            }
-            
-            // Step 2: Login with CSRF token
-            val response = api.login(csrfToken, LoginRequestV2(email, password))
+            // Step 1: Login with X-Requested-With header (fixes CSRF)
+            // Focalboard v2 API requires X-Requested-With: XMLHttpRequest header
+            val response = api.login("XmlHttpRequest", LoginRequestV2("normal", username, password))
             
             // Step 3: Save credentials
             settingsManager.saveServerUrl(normalizedUrl)
