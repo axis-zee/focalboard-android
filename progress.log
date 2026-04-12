@@ -10917,3 +10917,8 @@ f2814f1 chore: auto-save progress 2026-04-12 16:00
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+
+## 2026-04-12 18:12:45
+- Fixed CSRF token handling by adding X-Requested-With header
+- Updated login API format to use type=username+password
+- Committed: 68ce9a8
