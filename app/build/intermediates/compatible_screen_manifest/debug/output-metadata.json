@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.focalboard.android.debug",
+  "applicationId": "com.focalboard.mobile",
   "variantName": "debug",
   "elements": []
 }
