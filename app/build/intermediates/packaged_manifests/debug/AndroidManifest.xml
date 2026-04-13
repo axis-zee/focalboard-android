@@ -29,7 +29,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FocalboardAndroid" >
+        android:theme="@style/Theme.FocalboardAndroid"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.focalboard.android.MainActivity"
             android:exported="true"

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.navigation:navigation-common:2.7.5] /home/zaytun/.gradle/caches/transforms-3/cf1ccb7b70137707d0cf7d240b9d4b1a/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.5] /home/zaytun/.gradle/caches/transforms-3/3b9b9c6e5a374225da02d94824628d62/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /home/zaytun/.gradle/caches/transforms-3/448b62ba604323ff3aa997ea78a0fbe8/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
@@ -79,8 +79,8 @@ ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/Andr
 	android:name
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-30:19
-INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-30:19
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-31:19
+INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:8:5-31:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/zaytun/.gradle/caches/transforms-3/9ec79333a93aea03ef4244b7c4858a76/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/zaytun/.gradle/caches/transforms-3/9ec79333a93aea03ef4244b7c4858a76/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.1] /home/zaytun/.gradle/caches/transforms-3/81fb47d655f7c7be980955f7815c8c2e/transformed/ui-test-manifest-1.6.1/AndroidManifest.xml:22:5-26:19
@@ -112,7 +112,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches
 	android:roundIcon
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:18:9-29
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:19:9-29
 	android:icon
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
@@ -121,26 +121,28 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/zaytun/.gradle/caches
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:17:9-55
 	android:dataExtractionRules
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:11:9-65
+	android:usesCleartextTraffic
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:18:9-44
 	android:name
 		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:9:9-38
 activity#com.focalboard.android.MainActivity
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:20:9-28:20
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:22:13-36
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:23:13-36
 	android:theme
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:23:13-59
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:24:13-59
 	android:name
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:21:13-41
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:22:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:24:13-27:29
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:25:13-28:29
 action#android.intent.action.MAIN
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml:27:27-74
 uses-sdk
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/AndroidManifest.xml
