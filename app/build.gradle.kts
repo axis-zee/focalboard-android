@@ -13,7 +13,6 @@ android {
         options.compilerArgs.add("-XDignore.symbol.file")
     }
     
-    // Use AAPT2 from Maven (avoids x86_64 binary on ARM64)
     androidResources {
         generateLocaleConfig = false
     }
