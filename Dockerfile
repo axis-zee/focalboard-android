@@ -40,9 +40,12 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# Build the APK
+# Clear Gradle AAPT2 cache completely
+RUN rm -rf /root/.gradle/caches/transforms-* /root/.gradle/wrapper/dists 2>/dev/null || true
+
+# Build the APK - force use of SDK AAPT2
 RUN chmod +x ./gradlew && \
-    ./gradlew assembleDebug --no-daemon
+    ./gradlew assembleDebug --no-daemon --warning-mode=all
 
 # Copy output
 RUN cp app/build/outputs/apk/debug/app-debug.apk /app-debug.apk
