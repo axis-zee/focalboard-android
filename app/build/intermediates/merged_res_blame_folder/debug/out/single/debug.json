@@ -1,50 +1,50 @@
 [
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "com.focalboard.android.app-main-59:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "com.focalboard.android.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/xml_data_extraction_rules.xml.flat",
-        "source": "com.focalboard.android.app-main-58:/xml/data_extraction_rules.xml"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/xml_backup_rules.xml.flat",
-        "source": "com.focalboard.android.app-main-58:/xml/backup_rules.xml"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.focalboard.android.app-merged_res-56:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.focalboard.android.app-main-58:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.focalboard.android.app-merged_res-57:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.focalboard.android.app-main-59:/mipmap-mdpi/ic_launcher.png"
     }
 ]

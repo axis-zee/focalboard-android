@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.focalboard.android.app-mergeDebugResources-54:/values-pl/values-pl.xml",
+            "outputFile": "com.focalboard.android.app-mergeDebugResources-55:/values-pl/values-pl.xml",
             "map": [
                 {
                     "source": "/home/zaytun/.gradle/caches/transforms-3/088fedbbd2e70d40e8a7e4ed246dd846/transformed/material3-release/res/values-pl/values-pl.xml",

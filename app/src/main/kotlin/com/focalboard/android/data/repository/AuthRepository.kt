@@ -3,7 +3,8 @@ package com.focalboard.android.data.repository
 import com.focalboard.android.data.api.*
 import com.focalboard.android.data.local.SettingsManager
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.firstOrNull
 
 class AuthRepository(
     private val settingsManager: SettingsManager
@@ -12,7 +13,7 @@ class AuthRepository(
     private val apiService = ApiService()
     
     suspend fun isLoggedIn(): Boolean {
-        return settingsManager.getAuthToken().first() != null
+        return settingsManager.getAuthToken().firstOrNull() != null
     }
     
     val currentServerUrl: Flow<String?>

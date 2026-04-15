@@ -71,7 +71,7 @@ fun BoardDetailScreen(
                                 Box {
                                     IconButton(onClick = { /* TODO: Show view selector */ }) {
                                         Icon(
-                                            imageVector = Icons.Filled.ListAlt,
+                                            imageVector = Icons.Default.ListAlt,
                                             contentDescription = "Change view"
                                         )
                                     }
@@ -80,8 +80,8 @@ fun BoardDetailScreen(
                             
                             IconButton(onClick = { viewModel.refresh() }) {
                                 Icon(
-                                    imageVector = Icons.Filled.Refresh,
-                                    contentDescription = "Icons.Filled.Refresh"
+                                    imageVector = Icons.Default.Refresh,
+                                    contentDescription = "Icons.Default.Refresh"
                                 )
                             }
                         }
@@ -97,7 +97,7 @@ fun BoardDetailScreen(
                         onClick = { showAddCardDialog = true },
                         containerColor = MaterialTheme.colorScheme.primary
                     ) {
-                        Icon(Icons.Filled.Add, contentDescription = "Icons.Filled.Add Card")
+                        Icon(Icons.Default.Add, contentDescription = "Icons.Default.Add Card")
                     }
                 }
                 else -> {}
@@ -168,7 +168,7 @@ fun BoardDetailScreen(
         }
     }
     
-    // Icons.Filled.Add Card Dialog
+    // Icons.Default.Add Card Dialog
     if (showAddCardDialog) {
         AddCardDialog(
             onDismiss = { showAddCardDialog = false },
@@ -179,7 +179,7 @@ fun BoardDetailScreen(
         )
     }
     
-    // Icons.Filled.Edit Card Dialog
+    // Icons.Default.Edit Card Dialog
     showEditCardDialog?.let { row ->
         EditCardDialog(
             row = row,
@@ -191,14 +191,14 @@ fun BoardDetailScreen(
         )
     }
     
-    // Icons.Filled.Delete Confirmation Dialog
+    // Icons.Default.Delete Confirmation Dialog
     showDeleteConfirmDialog?.let { row ->
         AlertDialog(
             onDismissRequest = { showDeleteConfirmDialog = null },
             icon = {
-                Icon(Icons.Filled.Delete, contentDescription = null)
+                Icon(Icons.Default.Delete, contentDescription = null)
             },
-            title = { Text("Icons.Filled.Delete Card") },
+            title = { Text("Icons.Default.Delete Card") },
             text = { Text("Are you sure you want to delete this card?") },
             confirmButton = {
                 Button(
@@ -210,7 +210,7 @@ fun BoardDetailScreen(
                         containerColor = MaterialTheme.colorScheme.error
                     )
                 ) {
-                    Text("Icons.Filled.Delete", color = MaterialTheme.colorScheme.onError)
+                    Text("Icons.Default.Delete", color = MaterialTheme.colorScheme.onError)
                 }
             },
             dismissButton = {
@@ -255,7 +255,7 @@ fun KanbanView(
             }
         }
         
-        // Icons.Filled.Add new card column
+        // Icons.Default.Add new card column
         item {
             KanbanAddColumn(onAddCard = onAddCard)
         }
@@ -332,14 +332,14 @@ fun KanbanColumn(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Icon(
-                                imageVector = Icons.Filled.Add,
+                                imageVector = Icons.Default.Add,
                                 contentDescription = null,
                                 modifier = Modifier.size(20.dp),
                                 tint = MaterialTheme.colorScheme.primary
                             )
                             Spacer(modifier = Modifier.width(4.dp))
                             Text(
-                                text = "Icons.Filled.Add card",
+                                text = "Icons.Default.Add card",
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.primary
                             )
@@ -370,14 +370,14 @@ fun KanbanAddColumn(onAddCard: () -> Unit) {
             verticalArrangement = Arrangement.Center
         ) {
             Icon(
-                imageVector = Icons.Filled.Add,
+                imageVector = Icons.Default.Add,
                 contentDescription = null,
                 modifier = Modifier.size(48.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Icons.Filled.Add new column",
+                text = "Icons.Default.Add new column",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -494,13 +494,13 @@ fun GridView(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Icon(
-                        imageVector = Icons.Filled.Add,
+                        imageVector = Icons.Default.Add,
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.primary
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text(
-                        text = "Icons.Filled.Add Card",
+                        text = "Icons.Default.Add Card",
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.primary
                     )
@@ -522,7 +522,7 @@ fun EmptyBoardState(onAddCard: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Filled.ListAlt,
+                imageVector = Icons.Default.ListAlt,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -539,7 +539,7 @@ fun EmptyBoardState(onAddCard: () -> Unit) {
             Spacer(modifier = Modifier.height(8.dp))
             
             Text(
-                text = "Icons.Filled.Add your first card to get started",
+                text = "Icons.Default.Add your first card to get started",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -552,9 +552,9 @@ fun EmptyBoardState(onAddCard: () -> Unit) {
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Filled.Add, contentDescription = null)
+                Icon(Icons.Default.Add, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Icons.Filled.Add Card")
+                Text("Icons.Default.Add Card")
             }
         }
     }
@@ -572,7 +572,7 @@ fun ErrorBoardState(message: String, onRetry: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Filled.Error,
+                imageVector = Icons.Default.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error
@@ -602,7 +602,7 @@ fun ErrorBoardState(message: String, onRetry: () -> Unit) {
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Filled.Refresh, contentDescription = null)
+                Icon(Icons.Default.Refresh, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
                 Text("Retry")
             }
@@ -621,9 +621,9 @@ fun AddCardDialog(
     AlertDialog(
         onDismissRequest = onDismiss,
         icon = {
-            Icon(Icons.Filled.Add, contentDescription = null)
+            Icon(Icons.Default.Add, contentDescription = null)
         },
-        title = { Text("Icons.Filled.Add Card") },
+        title = { Text("Icons.Default.Add Card") },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 OutlinedTextField(
@@ -635,7 +635,7 @@ fun AddCardDialog(
                     singleLine = true
                 )
                 
-                // TODO: Icons.Filled.Add status selector dropdown when we have column definitions
+                // TODO: Icons.Default.Add status selector dropdown when we have column definitions
             }
         },
         confirmButton = {
@@ -647,7 +647,7 @@ fun AddCardDialog(
                 },
                 enabled = cardName.isNotBlank()
             ) {
-                Text("Icons.Filled.Add")
+                Text("Icons.Default.Add")
             }
         },
         dismissButton = {
@@ -669,9 +669,9 @@ fun EditCardDialog(
     AlertDialog(
         onDismissRequest = onDismiss,
         icon = {
-            Icon(Icons.Filled.Edit, contentDescription = null)
+            Icon(Icons.Default.Edit, contentDescription = null)
         },
-        title = { Text("Icons.Filled.Edit Card") },
+        title = { Text("Icons.Default.Edit Card") },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 OutlinedTextField(
@@ -708,9 +708,9 @@ fun EditCardDialog(
                             // TODO: Show delete confirmation
                         }
                     ) {
-                        Icon(Icons.Filled.Delete, contentDescription = "Icons.Filled.Delete", modifier = Modifier.size(16.dp))
+                        Icon(Icons.Default.Delete, contentDescription = "Icons.Default.Delete", modifier = Modifier.size(16.dp))
                         Spacer(modifier = Modifier.width(4.dp))
-                        Text("Icons.Filled.Delete")
+                        Text("Icons.Default.Delete")
                     }
                 }
             }

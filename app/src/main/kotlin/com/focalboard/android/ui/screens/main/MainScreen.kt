@@ -45,12 +45,12 @@ fun MainScreen(
                 actions = {
                     IconButton(onClick = { viewModel.refreshBoards() }) {
                         Icon(
-                            imageVector = Icons.Filled.Refresh,
-                            contentDescription = "Icons.Filled.Refresh"
+                            imageVector = Icons.Default.Refresh,
+                            contentDescription = "Icons.Default.Refresh"
                         )
                     }
                     IconButton(onClick = { showLogoutDialog = true }) {
-                        Icon(Icons.Filled.ExitToApp, contentDescription = "Logout")
+                        Icon(Icons.Default.ExitToApp, contentDescription = "Logout")
                     }
                 }
             )
@@ -60,7 +60,7 @@ fun MainScreen(
                 onClick = { /* TODO: Create board */ },
                 containerColor = MaterialTheme.colorScheme.primary
             ) {
-                Icon(Icons.Filled.Add, contentDescription = "Create Board")
+                Icon(Icons.Default.Add, contentDescription = "Create Board")
             }
         }
     ) { paddingValues ->
@@ -192,7 +192,7 @@ fun BoardItem(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Filled.Article,
+                imageVector = Icons.Default.Article,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(40.dp)
@@ -220,7 +220,7 @@ fun BoardItem(
             }
             
             Icon(
-                imageVector = Icons.Filled.ChevronRight,
+                imageVector = Icons.Default.ChevronRight,
                 contentDescription = "Open board",
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -242,7 +242,7 @@ fun EmptyState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Filled.Article,
+                imageVector = Icons.Default.Article,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -274,9 +274,9 @@ fun EmptyState(
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Filled.Refresh, contentDescription = null)
+                Icon(Icons.Default.Refresh, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Icons.Filled.Refresh")
+                Text("Icons.Default.Refresh")
             }
         }
     }
@@ -297,7 +297,7 @@ fun ErrorState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Filled.Error,
+                imageVector = Icons.Default.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error
@@ -330,7 +330,7 @@ fun ErrorState(
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Filled.Refresh, contentDescription = null)
+                Icon(Icons.Default.Refresh, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
                 Text("Retry")
             }
@@ -353,7 +353,7 @@ fun ErrorBanner(message: String) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Filled.Error,
+                imageVector = Icons.Default.Error,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onErrorContainer,
                 modifier = Modifier.size(20.dp)
@@ -376,7 +376,7 @@ fun LogoutDialog(
     AlertDialog(
         onDismissRequest = onDismiss,
         icon = {
-            Icon(Icons.Filled.ExitToApp, contentDescription = null)
+            Icon(Icons.Default.ExitToApp, contentDescription = null)
         },
         title = { Text("Logout") },
         text = { Text("Are you sure you want to logout?") },
