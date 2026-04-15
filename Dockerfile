@@ -42,22 +42,7 @@ COPY . .
 
 # Build the APK
 RUN chmod +x ./gradlew && \
-    ./gradlew assembleDebug --no-daemon || true
-
-# Wrap Maven AAPT2 with QEMU for x86_64 binary on ARM64
-RUN find /root/.gradle/caches -name 'aapt2' -type f 2>/dev/null | while read aapt2_path; do \
-    if file "$aapt2_path" | grep -q "x86_64"; then \
-        dir=$(dirname "$aapt2_path"); \
-        echo "Wrapping $aapt2_path with QEMU"; \
-        mv "$aapt2_path" "$aapt2_path.x86_64"; \
-        echo '#!/bin/sh' > "$aapt2_path"; \
-        echo "exec /usr/bin/qemu-x86_64 $aapt2_path.x86_64 \"\$@\"" >> "$aapt2_path"; \
-        chmod +x "$aapt2_path"; \
-    fi; \
-done
-
-# Retry build with wrapped AAPT2
-RUN ./gradlew assembleDebug --no-daemon --rerun-tasks
+    ./gradlew assembleDebug --no-daemon
 
 # Copy output
 RUN cp app/build/outputs/apk/debug/app-debug.apk /app-debug.apk
