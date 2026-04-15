@@ -5,15 +5,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Description
-import androidx.compose.material.icons.filled.Error
-import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.filled.ViewList
-import androidx.compose.material.icons.outlined.Description
-import androidx.compose.material.icons.outlined.Error
-import androidx.compose.material.icons.automirrored.filled.ChevronRight
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -53,12 +44,12 @@ fun MainScreen(
                 actions = {
                     IconButton(onClick = { viewModel.refreshBoards() }) {
                         Icon(
-                            imageVector = Icons.Default.Refresh,
-                            contentDescription = "Refresh"
+                            imageVector = Icons.Filled.Refresh,
+                            contentDescription = "Icons.Filled.Refresh"
                         )
                     }
                     IconButton(onClick = { showLogoutDialog = true }) {
-                        Icon(Icons.Default.ExitToApp, contentDescription = "Logout")
+                        Icon(Icons.Filled.ExitToApp, contentDescription = "Logout")
                     }
                 }
             )
@@ -68,7 +59,7 @@ fun MainScreen(
                 onClick = { /* TODO: Create board */ },
                 containerColor = MaterialTheme.colorScheme.primary
             ) {
-                Icon(Icons.Default.Add, contentDescription = "Create Board")
+                Icon(Icons.Filled.Add, contentDescription = "Create Board")
             }
         }
     ) { paddingValues ->
@@ -107,7 +98,7 @@ fun MainScreen(
                     }
                 }
                 
-                is MainUiState.Error -> {
+                is MainUiState.Icons.Outlined.Error -> {
                     if (state.boards.isEmpty()) {
                         ErrorState(
                             message = state.message,
@@ -200,7 +191,7 @@ fun BoardItem(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Default.Description,
+                imageVector = Icons.Outlined.Description,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(40.dp)
@@ -228,7 +219,7 @@ fun BoardItem(
             }
             
             Icon(
-                imageVector = Icons.Default.ChevronRight,
+                imageVector = Icons.Filled.ChevronRight,
                 contentDescription = "Open board",
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -250,7 +241,7 @@ fun EmptyState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Default.Description,
+                imageVector = Icons.Outlined.Description,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -282,9 +273,9 @@ fun EmptyState(
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Default.Refresh, contentDescription = null)
+                Icon(Icons.Filled.Refresh, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Refresh")
+                Text("Icons.Filled.Refresh")
             }
         }
     }
@@ -338,7 +329,7 @@ fun ErrorState(
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             ) {
-                Icon(Icons.Default.Refresh, contentDescription = null)
+                Icon(Icons.Filled.Refresh, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
                 Text("Retry")
             }
@@ -361,7 +352,7 @@ fun ErrorBanner(message: String) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Default.Error,
+                imageVector = Icons.Outlined.Error,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onErrorContainer,
                 modifier = Modifier.size(20.dp)
@@ -384,7 +375,7 @@ fun LogoutDialog(
     AlertDialog(
         onDismissRequest = onDismiss,
         icon = {
-            Icon(Icons.Default.ExitToApp, contentDescription = null)
+            Icon(Icons.Filled.ExitToApp, contentDescription = null)
         },
         title = { Text("Logout") },
         text = { Text("Are you sure you want to logout?") },

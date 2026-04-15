@@ -150,7 +150,7 @@ class BoardDetailViewModel(
                 _uiState.value = when (val currentState = _uiState.value) {
                     is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
                     else -> BoardDetailUiState.Success(
-                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        board = currentBoard ?: Board("", "", "", "", 0L, 0L),
                         views = currentViews,
                         rows = currentRows,
                         selectedViewId = currentViewId
@@ -186,7 +186,7 @@ class BoardDetailViewModel(
                 _uiState.value = when (val currentState = _uiState.value) {
                     is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
                     else -> BoardDetailUiState.Success(
-                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        board = currentBoard ?: Board("", "", "", "", 0L, 0L),
                         views = currentViews,
                         rows = currentRows,
                         selectedViewId = currentViewId
@@ -217,7 +217,7 @@ class BoardDetailViewModel(
                 _uiState.value = when (val currentState = _uiState.value) {
                     is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
                     else -> BoardDetailUiState.Success(
-                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        board = currentBoard ?: Board("", "", "", "", 0L, 0L),
                         views = currentViews,
                         rows = currentRows,
                         selectedViewId = currentViewId

@@ -20,24 +20,23 @@ class BoardRepository(
      * Get boards from local database, filtered by current server URL
      */
     fun getBoards(): Flow<List<Board>> {
-        return settingsManager.getServerUrl().map { serverUrl ->
-            serverUrl ?: return@map emptyList()
-        }.combine(settingsManager.getAuthToken()) { serverUrl, token ->
-            if (serverUrl != null && token != null) {
-                // Boards will be loaded from local DB
-                Pair(serverUrl, token)
-            } else {
-                null
-            }
-        }.flatMapLatest { pair ->
-            if (pair != null) {
-                boardDao.getBoardsByServer(pair.first).map { entities ->
-                    entities.map { it.toBoard() }
+        return settingsManager.getServerUrl()
+            .combine(settingsManager.getAuthToken()) { serverUrl: String?, token: String? ->
+                if (serverUrl != null && token != null) {
+                    Pair(serverUrl, token)
+                } else {
+                    null
                 }
-            } else {
-                kotlinx.coroutines.flow.flowOf(emptyList())
             }
-        }
+            .flatMapLatest { pair ->
+                if (pair != null) {
+                    boardDao.getBoardsByServer(pair.first).map { entities ->
+                        entities.map { it.toBoard() }
+                    }
+                } else {
+                    kotlinx.coroutines.flow.flowOf(emptyList<Board>())
+                }
+            }
     }
     
     /**
