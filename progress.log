@@ -967,3 +967,296 @@ db9ef44 chore: auto-save progress 2026-04-15 03:00
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main 48bdaa4] chore: auto-save progress 2026-04-15 06:00
+ 261 files changed, 3787 insertions(+), 3720 deletions(-)
+ delete mode 100644 app/build/kspCaches/debug/symbols.values
+ delete mode 100644 app/build/kspCaches/debug/symbols.values.s
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-15 06:00:01
+
+### 📁 Recent Commits
+32327eb chore: auto-save progress 2026-04-15 05:30
+dcad58e chore: auto-save progress 2026-04-15 05:00
+fa2ccda chore: auto-save progress 2026-04-15 04:30
+f762bfb chore: auto-save progress 2026-04-15 04:00
+0b6f80e chore: auto-save progress 2026-04-15 03:30
+
+### 📊 Repository Stats
+- **Total commits:** 390
+- **Total files:** 687
+- **Total lines of code:** 10942
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/checksums/checksums.lock
+ M .gradle/8.2/checksums/md5-checksums.bin
+ M .gradle/8.2/checksums/sha1-checksums.bin
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/8.2/fileHashes/resourceHashesCache.bin
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ M app/build.gradle.kts
+ M app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+ M app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+ M app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+ M app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+ M app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat
+ M app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat
+ M app/build/intermediates/merged_res/debug/values-af_values-af.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-am_values-am.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ar_values-ar.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-as_values-as.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-az_values-az.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-be_values-be.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bg_values-bg.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bn_values-bn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-bs_values-bs.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ca_values-ca.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-cs_values-cs.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-da_values-da.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-de_values-de.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-el_values-el.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rAU_values-en-rAU.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rCA_values-en-rCA.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rGB_values-en-rGB.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rIN_values-en-rIN.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-en-rXC_values-en-rXC.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-es-rUS_values-es-rUS.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-es_values-es.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-et_values-et.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-eu_values-eu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fa_values-fa.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fi_values-fi.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fr-rCA_values-fr-rCA.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-fr_values-fr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-gl_values-gl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-gu_values-gu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hi_values-hi.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hr_values-hr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hu_values-hu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-hy_values-hy.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-in_values-in.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-is_values-is.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-it_values-it.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-iw_values-iw.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ja_values-ja.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ka_values-ka.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-kk_values-kk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-km_values-km.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-kn_values-kn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ko_values-ko.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ky_values-ky.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lo_values-lo.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lt_values-lt.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-lv_values-lv.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mk_values-mk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ml_values-ml.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mn_values-mn.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-mr_values-mr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ms_values-ms.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-my_values-my.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-nb_values-nb.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ne_values-ne.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-nl_values-nl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-or_values-or.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pa_values-pa.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pl_values-pl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt-rBR_values-pt-rBR.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt-rPT_values-pt-rPT.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-pt_values-pt.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ro_values-ro.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ru_values-ru.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-si_values-si.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sk_values-sk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sl_values-sl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sq_values-sq.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sr_values-sr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sv_values-sv.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-sw_values-sw.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ta_values-ta.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-te_values-te.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-th_values-th.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-tl_values-tl.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-tr_values-tr.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-uk_values-uk.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-ur_values-ur.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-uz_values-uz.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-v16_values-v16.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-v21_values-v21.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-vi_values-vi.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rCN_values-zh-rCN.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rHK_values-zh-rHK.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zh-rTW_values-zh-rTW.arsc.flat
+ M app/build/intermediates/merged_res/debug/values-zu_values-zu.arsc.flat
+ M app/build/intermediates/merged_res/debug/values_values.arsc.flat
+ M app/build/intermediates/merged_res/debug/xml_backup_rules.xml.flat
+ M app/build/intermediates/merged_res/debug/xml_data_extraction_rules.xml.flat
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json
+ M app/build/intermediates/source_set_path_map/debug/file-map.txt
+ M app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ M app/build/kspCaches/debug/classLookups/counters.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/classLookups/lookups.tab
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/classLookups/lookups.tab_i
+ M app/build/kspCaches/debug/classpath-entries.bin
+ M app/build/kspCaches/debug/classpath-structure.bin
+ M app/build/kspCaches/debug/sourceToOutputs
+ M app/build/kspCaches/debug/sourceToOutputs.values.at
+ M app/build/kspCaches/debug/symbolLookups/counters.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab_i
+ M app/build/kspCaches/debug/symbols
+ M app/build/kspCaches/debug/symbols.keystream
+ D app/build/kspCaches/debug/symbols.values
+ M app/build/kspCaches/debug/symbols.values.at
+ D app/build/kspCaches/debug/symbols.values.s
+ M app/build/kspCaches/debug/symbols_i
+ M app/build/outputs/logs/manifest-merger-debug-report.txt
+ M app/src/main/kotlin/com/focalboard/android/data/repository/AuthRepository.kt
+ M app/src/main/kotlin/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreen.kt
+ M app/src/main/kotlin/com/focalboard/android/ui/screens/main/MainScreen.kt
+ M progress.log
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room

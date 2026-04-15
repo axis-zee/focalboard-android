@@ -8,6 +8,11 @@ android {
     namespace = "com.focalboard.android"
     compileSdk = 34
 
+    // Workaround for missing jlink on ARM64
+    tasks.withType<JavaCompile> {
+        options.compilerArgs.add("-XDignore.symbol.file")
+    }
+
     // Disable AAPT2 (x86 binary doesn't work on ARM64 without QEMU)
     // Use AAPT1 instead
     aaptOptions {
