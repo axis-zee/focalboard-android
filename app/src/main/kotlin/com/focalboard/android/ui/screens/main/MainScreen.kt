@@ -1,11 +1,12 @@
 package com.focalboard.android.ui.screens.main
 
-import android.content.Context
+import android.app.Application
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.filled.ChevronRight
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -23,9 +24,9 @@ import kotlinx.coroutines.launch
 fun MainScreen(
     onLogout: () -> Unit = {}
 ) {
-    val context = LocalContext.current
+    val application = (LocalContext.current.applicationContext as Application)
     val viewModel: MainViewModel = viewModel(
-        factory = MainViewModelFactory(context)
+        factory = MainViewModelFactory(application)
     )
     val uiState by viewModel.uiState.collectAsState()
     val coroutineScope = rememberCoroutineScope()
@@ -403,13 +404,13 @@ fun LogoutDialog(
 
 // ViewModel Factory for MainViewModel
 class MainViewModelFactory(
-    private val context: Context
+    private val application: Application
 ) : androidx.lifecycle.ViewModelProvider.Factory {
     
     @Suppress("UNCHECKED_CAST")
     override fun <T : androidx.lifecycle.ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
-            return MainViewModel(context.applicationContext) as T
+            return MainViewModel(application) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }

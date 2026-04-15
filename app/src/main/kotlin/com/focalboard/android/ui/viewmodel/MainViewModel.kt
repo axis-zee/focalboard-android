@@ -134,6 +134,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
     
     fun getServerUrl(): String? {
-        return settingsManager.getServerUrl().value
+        return settingsManager.getServerUrl().firstOrNull()
     }
 }

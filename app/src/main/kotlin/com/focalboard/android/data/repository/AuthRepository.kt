@@ -12,7 +12,7 @@ class AuthRepository(
     private val apiService = ApiService()
     
     val isLoggedIn: Boolean
-        get() = TODO("Check auth token in coroutine context")
+        get() = settingsManager.getAuthToken().value != null
     
     val currentServerUrl: Flow<String?>
         get() = settingsManager.getServerUrl()
