@@ -12,10 +12,10 @@ android {
     tasks.withType<JavaCompile> {
         options.compilerArgs.add("-XDignore.symbol.file")
     }
-
-    // Workaround for missing jlink on ARM64
-    tasks.withType<JavaCompile> {
-        options.compilerArgs.add("-XDignore.symbol.file")
+    
+    // Use AAPT2 from Maven (avoids x86_64 binary on ARM64)
+    androidResources {
+        generateLocaleConfig = false
     }
 
     defaultConfig {
@@ -60,10 +60,6 @@ android {
 
     buildFeatures {
         compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.12"
     }
 
     packaging {

@@ -4,6 +4,7 @@ FROM eclipse-temurin:17-jdk
 RUN apt-get update && apt-get install -y \
     wget \
     unzip \
+    file \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up Android SDK
@@ -23,8 +24,8 @@ RUN yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/nu
 # Install required SDK components
 RUN $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
-# Remove the problematic Debian symlink - we'll use AAPT2 from Maven instead
-# The symlink was causing shell parsing errors
+# Remove any cached AAPT2 references to force Maven AAPT2
+RUN rm -rf /usr/lib/android-sdk 2>/dev/null || true
 
 # Set working directory
 WORKDIR /app
