@@ -1260,3 +1260,467 @@ f762bfb chore: auto-save progress 2026-04-15 04:00
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main 76001d5] chore: auto-save progress 2026-04-15 06:30
+ 428 files changed, 319 insertions(+), 20 deletions(-)
+ create mode 100644 app/build/generated/source/buildConfig/debug/com/focalboard/android/BuildConfig.java
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.s
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ create mode 100644 app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+ create mode 100644 app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/MainActivity.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService$cookieJar$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/AuthResponseV2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Board.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRow.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowCreateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowUpdateRequest.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardView.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CellValue.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CsrfResponse.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Filter.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LoginRequestV2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/UserInfo.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ViewOptions.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/BoardDao.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/BoardEntity.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/FocalboardDatabase$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/FocalboardDatabase.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$Companion.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$clearAuth$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManagerKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$isLoggedIn$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$login$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoardById$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoards$$inlined$flatMapLatest$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoards$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoards$lambda$2$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoards$lambda$2$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$getBoards$lambda$2$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository$refreshBoards$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepository.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/BoardRepositoryKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$2$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$2$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$2$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$BoardDetail.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Login.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Main.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$3$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$AddCardDialog$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1$3$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1$3$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$2$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3$1$7.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$5.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$6$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$6$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$7$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$7$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$7$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$7$3$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$7$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$BoardDetailScreen$8.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$3$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$3$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EditCardDialog$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$EmptyBoardState$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$ErrorBoardState$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$2$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$invoke$$inlined$items$default$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$invoke$$inlined$items$default$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$invoke$$inlined$items$default$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1$invoke$$inlined$items$default$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$GridView$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanAddColumn$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanCard$1$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanCard$1$1$1$2$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanCard$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanCard$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$invoke$$inlined$items$default$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$invoke$$inlined$items$default$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$invoke$$inlined$items$default$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2$invoke$$inlined$items$default$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanColumn$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanView$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanView$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanView$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt$KanbanView$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-10$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-11$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-12$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-13$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-14$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-15$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-16$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-17$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-18$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-19$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-20$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-21$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-22$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-23$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-24$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-25$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-26$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-27$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-7$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-8$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt$lambda-9$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/boarddetail/ComposableSingletons$BoardDetailScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-10$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-11$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-12$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-13$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardItem$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardItem$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$2$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$invoke$$inlined$items$default$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$invoke$$inlined$items$default$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$invoke$$inlined$items$default$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1$invoke$$inlined$items$default$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$BoardList$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$EmptyState$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$ErrorBanner$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$ErrorBanner$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$ErrorState$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$LogoutDialog$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$LogoutDialog$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$LogoutDialog$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$4$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$4$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$4$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$4.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$5$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$5$1$3.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$5.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$6$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$7$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$8.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainViewModelFactory.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailUiState$Error.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailUiState$Loading.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailUiState$NotAuthenticated.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailUiState$Success.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailUiState.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel$changeView$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel$createCard$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel$deleteCard$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel$loadBoardDetail$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel$updateCard$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/BoardDetailViewModel.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainUiState$Error.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainUiState$Loading.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainUiState$NotAuthenticated.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainUiState$Success.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainUiState.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$logout$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1$invokeSuspend$$inlined$map$1$2$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1$invokeSuspend$$inlined$map$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1$invokeSuspend$$inlined$map$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeAuthAndBoards$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeBoards$1$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeBoards$1$2.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$observeBoards$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel$refreshBoards$1.class
+ create mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/viewmodel/MainViewModel.class
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-15 06:30:01
+
+### 📁 Recent Commits
+48bdaa4 chore: auto-save progress 2026-04-15 06:00
+32327eb chore: auto-save progress 2026-04-15 05:30
+dcad58e chore: auto-save progress 2026-04-15 05:00
+fa2ccda chore: auto-save progress 2026-04-15 04:30
+f762bfb chore: auto-save progress 2026-04-15 04:00
+
+### 📊 Repository Stats
+- **Total commits:** 391
+- **Total files:** 1059
+- **Total lines of code:** 10947
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/8.2/fileHashes/resourceHashesCache.bin
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ M app/build.gradle.kts
+ D app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+ M app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ M app/build/kspCaches/debug/classLookups/counters.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/classLookups/lookups.tab
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/classLookups/lookups.tab_i
+ M app/build/kspCaches/debug/sourceToOutputs
+ M app/build/kspCaches/debug/sourceToOutputs.values.at
+ M app/build/kspCaches/debug/symbolLookups/counters.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab_i
+ M app/build/kspCaches/debug/symbols
+ M app/build/kspCaches/debug/symbols.values.at
+ M app/src/main/kotlin/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreen.kt
+ M gradle.properties
+ M progress.log
+?? app/build/generated/source/
+?? app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/
+?? app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+?? app/build/kotlin/compileDebugKotlin/classpath-snapshot/
+?? app/build/tmp/
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
