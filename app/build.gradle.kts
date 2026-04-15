@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.focalboard.android"
-    compileSdk = 33
+    compileSdk = 34
 
     // Workaround for missing jlink on ARM64
     tasks.withType<JavaCompile> {
@@ -56,7 +56,8 @@ android {
     }
     
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.0"
+        suppressKotlinVersionCompatibilityCheck = true
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
 
     buildFeatures {
@@ -64,7 +65,8 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.0"
+        suppressKotlinVersionCompatibilityCheck = true
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
 
     packaging {
@@ -76,20 +78,20 @@ android {
 
 dependencies {
     // Core Android
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.10.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.activity:activity-compose:1.7.1")
     
     // Compose - explicit versions
-    implementation("androidx.compose.ui:ui:1.4.0")
-    implementation("androidx.compose.ui:ui-graphics:1.4.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")
-    implementation("androidx.compose.material3:material3:1.0.1")
-    implementation("androidx.compose.material:material-icons-extended:1.4.0")
+    implementation("androidx.compose.ui:ui:1.5.0")
+    implementation("androidx.compose.ui:ui-graphics:1.5.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.0")
+    implementation("androidx.compose.material3:material3:1.1.0")
+    implementation("androidx.compose.material:material-icons-extended:1.5.0")
     
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.5")
+    implementation("androidx.navigation:navigation-compose:2.5.3")
     
     // Networking
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -102,9 +104,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     
     // Local Storage (Room)
-    implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-    ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-runtime:2.5.2")
+    implementation("androidx.room:room-ktx:2.5.2")
+    ksp("androidx.room:room-compiler:2.5.2")
     
     // DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")

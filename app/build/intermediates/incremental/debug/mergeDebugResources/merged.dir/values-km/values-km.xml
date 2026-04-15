@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="6128938260108474660" name="bottom_sheet_collapse_description">"បង្រួម​សន្លឹកខាងក្រោម"</string>
+    <string msgid="1918297411568599192" name="bottom_sheet_dismiss_description">"ច្រានចោល​សន្លឹកខាងក្រោម"</string>
+    <string msgid="7772321844937772780" name="bottom_sheet_drag_handle_description">"ដង​អូស"</string>
+    <string msgid="4324434199045499117" name="bottom_sheet_expand_description">"ពង្រីក​សន្លឹកខាងក្រោម"</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"ឆ្លើយ"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"វីដេអូ"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"បដិសេធ"</string>
@@ -10,6 +14,37 @@
     <string msgid="406453423630273620" name="close_drawer">"បិទម៉ឺនុយរុករក"</string>
     <string msgid="7573152094250666567" name="close_sheet">"បិទសន្លឹក"</string>
     <string msgid="5389587048670450460" name="collapsed">"បាន​បង្រួម"</string>
+    <string msgid="3499643850558715142" name="date_input_headline">"កាលបរិច្ឆេទដែលបានបញ្ចូល"</string>
+    <string msgid="8562356184193964298" name="date_input_headline_description">"កាលបរិច្ឆេទដែលបានបញ្ចូល៖ %1$s"</string>
+    <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"កាលបរិច្ឆេទមិនត្រូវគ្នានឹងលំនាំដែលរំពឹងទុកទេ៖ %1$s"</string>
+    <string msgid="6114792992433444995" name="date_input_invalid_not_allowed">"កាលបរិច្ឆេទដែលមិនបានអនុញ្ញាត៖ %1$s"</string>
+    <string msgid="8434112129235255568" name="date_input_invalid_year_range">"កាលបរិច្ឆេទដែលស្ថិតនៅក្រៅចន្លោះឆ្នាំដែលរំពឹងទុក %1$s - %2$s"</string>
+    <string msgid="5194825853981987218" name="date_input_label">"កាលបរិច្ឆេទ"</string>
+    <string msgid="5722931102250207748" name="date_input_no_input_description">"គ្មាន"</string>
+    <string msgid="3010396677286327048" name="date_input_title">"ជ្រើសរើស​កាលបរិច្ឆេទ"</string>
+    <string msgid="2846784065735639969" name="date_picker_headline">"កាលបរិច្ឆេទដែលបាន​ជ្រើសរើស"</string>
+    <string msgid="4627306862713137085" name="date_picker_headline_description">"ការជ្រើសរើសបច្ចុប្បន្ន៖ %1$s"</string>
+    <string msgid="5152441868029453612" name="date_picker_navigate_to_year_description">"រុករកទៅកាន់ឆ្នាំ %1$s"</string>
+    <string msgid="5724377114289981899" name="date_picker_no_selection_description">"គ្មាន"</string>
+    <string msgid="8911933542023210271" name="date_picker_scroll_to_earlier_years">"រំកិលដើម្បី​បង្ហាញឆ្នាំមុនៗ"</string>
+    <string msgid="3226341140390493774" name="date_picker_scroll_to_later_years">"រំកិលដើម្បី​បង្ហាញឆ្នាំក្រោយៗ"</string>
+    <string msgid="9029369254443419167" name="date_picker_switch_to_calendar_mode">"ប្ដូរទៅ​មុខងារបញ្ចូល​ប្រតិទិន"</string>
+    <string msgid="145089358343568971" name="date_picker_switch_to_day_selection">"អូសដើម្បីជ្រើសរើសឆ្នាំ ឬចុចដើម្បីប្ដូរត្រឡប់ទៅការជ្រើសរើសថ្ងៃវិញ"</string>
+    <string msgid="1496750567914156598" name="date_picker_switch_to_input_mode">"ប្ដូរទៅ​មុខងារបញ្ចូល​អក្សរ"</string>
+    <string msgid="8313783187901412102" name="date_picker_switch_to_next_month">"ប្ដូរ​ទៅ​ខែបន្ទាប់"</string>
+    <string msgid="7596294429748914881" name="date_picker_switch_to_previous_month">"ប្ដូរ​ទៅ​ខែមុន"</string>
+    <string msgid="3412370019845183965" name="date_picker_switch_to_year_selection">"ប្ដូរទៅ​ការជ្រើសរើសឆ្នាំ"</string>
+    <string msgid="9208721003668059792" name="date_picker_title">"ជ្រើសរើស​កាលបរិច្ឆេទ"</string>
+    <string msgid="4775802721403526937" name="date_picker_today_description">"ថ្ងៃនេះ"</string>
+    <string msgid="8140324713311804736" name="date_picker_year_picker_pane_title">"អាចមើលឃើញផ្ទាំងជ្រើសរើសឆ្នាំ"</string>
+    <string msgid="1891592555781755601" name="date_range_input_invalid_range_input">"ការបញ្ចូលចន្លោះកាលបរិច្ឆេទមិនត្រឹមត្រូវ"</string>
+    <string msgid="2366412111888449406" name="date_range_input_title">"បញ្ចូល​កាលបរិច្ឆេទ"</string>
+    <string msgid="9048690781645835833" name="date_range_picker_day_in_range">"ក្នុងចន្លោះ"</string>
+    <string msgid="4766270708882012148" name="date_range_picker_end_headline">"កាលបរិច្ឆេទ​បញ្ចប់"</string>
+    <string msgid="51495506931835470" name="date_range_picker_scroll_to_next_month">"រំកិលដើម្បីបង្ហាញខែក្រោយ"</string>
+    <string msgid="4371570854614540700" name="date_range_picker_scroll_to_previous_month">"រំកិលដើម្បីបង្ហាញខែមុន"</string>
+    <string msgid="5759491386723090559" name="date_range_picker_start_headline">"កាលបរិច្ឆេទ​ចាប់ផ្ដើម"</string>
+    <string msgid="690080476639943577" name="date_range_picker_title">"ជ្រើសរើស​កាល​បរិច្ឆេទ"</string>
     <string msgid="8038256446254964252" name="default_error_message">"ការបញ្ចូល​មិនត្រឹមត្រូវ"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"វិនដូ​លោតឡើង"</string>
     <string msgid="4057925834421392736" name="dialog">"ប្រអប់"</string>
@@ -23,9 +58,26 @@
     <string msgid="8655164131929253426" name="on">"បើក"</string>
     <string msgid="5941395253238309765" name="range_end">"ចំណុចបញ្ចប់"</string>
     <string msgid="7097486360902471446" name="range_start">"ចំណុចចាប់ផ្ដើម"</string>
+    <string msgid="6420018528474762666" name="search_bar_search">"ស្វែងរក"</string>
     <string msgid="6043586758067023" name="selected">"បានជ្រើសរើស"</string>
+    <string msgid="3962933905051144957" name="snackbar_dismiss">"ច្រានចោល"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="7189888345201419934" name="suggestions_available">"ការណែនាំខាងក្រោម"</string>
     <string msgid="2561197295334830845" name="switch_role">"ប៊ូតុង​បិទបើក"</string>
     <string msgid="1672349317127674378" name="tab">"Tab"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> ភាគរយ។"</string>
+    <string msgid="5096144640014509074" name="time_picker_am">"AM"</string>
+    <string msgid="7241191970823415723" name="time_picker_hour">"ម៉ោង"</string>
+    <string msgid="4149641012513526783" name="time_picker_hour_24h_suffix">"%1$d ម៉ោង"</string>
+    <string msgid="6081676287789101196" name="time_picker_hour_selection">"ជ្រើសរើសម៉ោង"</string>
+    <string msgid="6952032626122080528" name="time_picker_hour_suffix">"ម៉ោង %1$d"</string>
+    <string msgid="5298761125390275834" name="time_picker_hour_text_field">"រយៈពេលប៉ុន្មានម៉ោង"</string>
+    <string msgid="6116528647594005945" name="time_picker_minute">"នាទី​"</string>
+    <string msgid="8494777394375441602" name="time_picker_minute_selection">"ជ្រើស​នាទី"</string>
+    <string msgid="3206486707779478173" name="time_picker_minute_suffix">"%1$d នាទី"</string>
+    <string msgid="994099543833979061" name="time_picker_minute_text_field">"រយៈពេលប៉ុន្មាននាទី"</string>
+    <string msgid="7352665290700284516" name="time_picker_period_toggle_description">"ជ្រើសរើស AM ឬ PM"</string>
+    <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
+    <string msgid="2732804537909054941" name="tooltip_long_press_label">"បង្ហាញ​កំណត់​ពន្យល់"</string>
+    <string msgid="8191239805703103845" name="tooltip_pane_description">"កំណត់​ពន្យល់"</string>
 </resources>

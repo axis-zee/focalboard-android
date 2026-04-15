@@ -4,7 +4,7 @@
             "outputFile": "com.focalboard.android.app-mergeDebugResources-55:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/zaytun/.gradle/caches/transforms-3/b62ca2e656ad6959b4b61e0a547e9223/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "source": "/home/zaytun/.gradle/caches/transforms-3/01e4c30564a006ba663e4d6aa51e9feb/transformed/core-1.10.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
