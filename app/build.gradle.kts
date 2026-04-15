@@ -22,7 +22,7 @@ android {
     defaultConfig {
         applicationId = "com.focalboard.android"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "0.1.0"
 
@@ -82,11 +82,11 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.1")
     
     // Compose - explicit versions
-    implementation("androidx.compose.ui:ui:1.6.1")
-    implementation("androidx.compose.ui:ui-graphics:1.6.1")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.1")
-    implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.material:material-icons-extended:1.6.1")
+    implementation("androidx.compose.ui:ui:1.5.4")
+    implementation("androidx.compose.ui:ui-graphics:1.5.4")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.4")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
     
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.5")

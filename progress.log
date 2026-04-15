@@ -1786,3 +1786,567 @@ dcad58e chore: auto-save progress 2026-04-15 05:00
 - [ ] Implement card CRUD operations
 - [ ] Add drag-and-drop for cards
 - [ ] Add offline caching with Room
+[main 3766b8a] chore: auto-save progress 2026-04-15 08:00
+ 304 files changed, 36 insertions(+), 74 deletions(-)
+ delete mode 100644 app/build/intermediates/apk_ide_redirect_file/debug/redirect.txt
+ delete mode 100644 app/build/intermediates/data_binding_base_class_log_artifact/debug/out/com.focalboard.mobile-binding_classes.json
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_4/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_5/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_6/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_7/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_8/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_9/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_0/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_1/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_2/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_3/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_4/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_5/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_6/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_7/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_8/graph.bin
+ delete mode 100644 app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_9/graph.bin
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+ delete mode 100644 app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+ delete mode 100644 app/build/intermediates/dex_archive_input_jar_hashes/debug/out
+ delete mode 100644 app/build/intermediates/dex_number_of_buckets_file/debug/out
+ delete mode 100644 app/build/intermediates/incremental/dataBindingGenBaseClassesDebug/base_builder_log.json
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+IH2XCATbmu0ukoj5IxXX3UqZ7k=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+JhLjJXOVgPzSLiENRwKhXLu6c4=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+TRDdd3p4mfeKWJ1XwORuJW+uhk=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0N6lxdP+OpGrS2YTN_wuxm4PbGk=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0txqChjcx3YV4PmlMQCEwJrxews=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1K1QSN8PWLbJyn6bQCkh0oQ1E0Y=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1o83RAq3tfFmqT03ETCC0VXOjBQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2OxNgs6AbiihIfUpeefMFnG3DxY=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3Qf5r_OxVwf6s2xUoe15VeyNNrg=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/41lgecDnOWjHL4FTuhejBMHQSLI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5BDiHMB3Kg6y7+nsq2NvSAD6R1k=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5M7w6IQsOvx_IvB92fpgMgKieYE=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/61wkOnCATzfmv14gdIOLnyxTaOA=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7nbqrMAUs63+cPJ3eWZgQ08uGpo=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8Be_h1mYYr2pjIWZCngRzmyqtfo=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8ZoXbp4ROAW3WjetlkXjHKR2mhU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9kyoIOQNCzusEhw2weiwlrmJiBU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EeGJj1pNd8Xr4DyXHILwV+LWJaw=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EkEiYoaAr3jAzcU99iiIHPr8w3Q=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/F0o9f146yBp0snWC40Cj6A+Ex2Q=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GWRFgHVVXyNp1i_sFoslmCf6_2E=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HKybQWi3n+Dv75n5vk+quODJL4I=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HSF9xj3K7DpwhZJAED6vjp9Bol0=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6OIsmGbQcg1kmfh_y1R0xXhzNU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6PCRaZimsDOcz_RYz9cqf8Upog=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Jx2ACtPRDXlzjQlzglejy6KAUgQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/L7zWJE0gfXFnLH3hZjRv0RBvjWI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LkkU5+vpNfxxckYixpZQ99UC24A=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OwVHxuB+9K73FFhxNiI+YS3YJAg=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PXXA5XiY11bh2DvMX1+hicUgWEI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PtvnDYobQ+q_jY_kY0OmgfXjD4M=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PwoX6vYO7wVv3mUTe1lgLZ8JI4s=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q641esvg4DilQ6RrhERgJwQ1jHQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QYHarRNMnilAyerIjIpwkmctUds=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RV9W3sCZza9tL3bZuO11GmKKq_0=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RfNkY69A8SI36CYmL+3RvA1WlUs=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SxMKE142dNeEoPQEpaY9wbXbb0k=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TBHqOkO6agN_Wbp092VTqXTiUbg=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TSpTeloO+DjLG24bbY8fsxAdnsU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TeV6SlKIRP0ajcnHiVfOiJC_Ywo=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UeGSqC7bpXaDRxbzoGdtOlJdt4g=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UekLtfKlG6kiKvS9Phhkr5HnISk=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Ueq2rk8kt3vwiU9bwHAnVt_WYV4=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VBGqBo8gRIEZxGAEDLidO9Dztss=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WsbdFb+dl8ePjfy8WnHP216B0eg=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/X7+oTTDkgxspRfdawY8tuMIPpiE=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YrCVQdLuwCHN8d2hKs37oq474Us=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZMjA2oYtQEyBM7SeZQn7mVobv7c=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZrV5ZB7HqoF7JSxhhhEOCs7lJeA=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_F4FmLcqz0dfV2evxjarZB7yIX4=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aVXv9LhoEzXunPQkUOnFXKlPKpg=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/c+5ECWR1yC8Qw3e88nw6Xk4NNAY=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cj4KONDmjSEUGhTrQaFRtoOIOK8=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/djFH0uLpoys5t+79vtYmnhLF5F8=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/eCfkPb8LMeSn_Y0pAd0ccXbHJJk=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/euWylf0VRuHncRMxlXWUTQNuanw=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fYpRjCheE7OXcA0aAUbWagDAdq0=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/figPCiO3xNXDgZa9nfSivK28bkU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hSLWilU_mqb1ushNob1fH5rvK+I=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ibnLgc0juzjAxAssKLx1+fHGGsw=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jLOqDr8JxulDsHtPLjVOmgw4m7Y=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/kRU26mawdab9xTwwE99_P4R+a0M=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mgiR88UuhgLupMrrGUnkA+hocVo=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mqbU+DTmGSsLSbiUMoEaSxpxjQI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oqvCuyBa6k9l7pfxMrBzWKa1HeY=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rYpRUHizT2UqzIW_UV+XPjqVsxU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rc4_B7D9fZDARCqPdKAw1c4R7KY=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/t0je2h829hTRp45PdY2Kt1WjKAA=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tbAY+ZQn+2Usvtcj57BwX89ugCk=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tkT8ywPjVsKUGge4+WBRxY6zAQ4=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tzbQlSxQACjQfi6t2a2imoVXevI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uEVBYrmWNUJzNiSfb9xcoLZNnPw=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uhruMAN_71VkQ3l+UATJWip9TzQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/v3dUycdqwBncVCU8wgvN3KgBueQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vKvIaLpSBIXZCDXtuFt0RKqNmi4=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/wdsMIQNMad+UTVQ3IjDgk5w+NbM=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yengta030sTmpPErg6xWaBPBYOU=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zDkUFZA3qTSjGYT+lCnY+rGsnNQ=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zljJSj4cFjHNuyvitAnBPgYHQHI=
+ delete mode 100644 app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zyNAwtzdQyF66LJRtaztUmRTtfk=
+ delete mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+ delete mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+ delete mode 100644 app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0
+ delete mode 100644 app/build/intermediates/java_res/debug/out/META-INF/app_debug.kotlin_module
+ delete mode 100644 app/build/intermediates/merged_java_res/debug/base.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_0.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_1.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_2.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_3.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_4.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_5.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_6.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_7.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_8.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_9.jar
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp$Companion.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/MainActivity.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService$cookieJar$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/AuthResponseV2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Board.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardCreateRequest.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRow.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowCreateRequest.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowUpdateRequest.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardView.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CellValue.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CsrfResponse.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Filter.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LoginRequestV2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/UserInfo.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ViewOptions.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$Companion.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$clearAuth$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManagerKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository$login$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Login.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Main.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.dex
+ delete mode 100644 app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt.dex
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len
+ delete mode 100644 app/build/outputs/apk/debug/app-debug.apk
+ delete mode 100644 app/build/outputs/apk/debug/output-metadata.json
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-15 08:00:01
+
+### 📁 Recent Commits
+ebd23fd chore: auto-save progress 2026-04-15 07:30
+c58f7f4 chore: auto-save progress 2026-04-15 07:00
+76001d5 chore: auto-save progress 2026-04-15 06:30
+48bdaa4 chore: auto-save progress 2026-04-15 06:00
+32327eb chore: auto-save progress 2026-04-15 05:30
+
+### 📊 Repository Stats
+- **Total commits:** 394
+- **Total files:** 829
+- **Total lines of code:** 10947
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ D app/build/intermediates/apk_ide_redirect_file/debug/redirect.txt
+ D app/build/intermediates/data_binding_base_class_log_artifact/debug/out/com.focalboard.mobile-binding_classes.json
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_4/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_5/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_6/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_7/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_8/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_9/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_0/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_1/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_2/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_3/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_4/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_5/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_6/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_7/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_8/graph.bin
+ D app/build/intermediates/desugar_graph/debug/out/currentProject/jar_7a03cc72da330d228c4091224c15ed45dd356bfea4953baae584d291f28b2c07_bucket_9/graph.bin
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
+ D app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+ D app/build/intermediates/dex_archive_input_jar_hashes/debug/out
+ D app/build/intermediates/dex_number_of_buckets_file/debug/out
+ D app/build/intermediates/incremental/dataBindingGenBaseClassesDebug/base_builder_log.json
+ D app/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+IH2XCATbmu0ukoj5IxXX3UqZ7k=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+JhLjJXOVgPzSLiENRwKhXLu6c4=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+TRDdd3p4mfeKWJ1XwORuJW+uhk=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0N6lxdP+OpGrS2YTN_wuxm4PbGk=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0txqChjcx3YV4PmlMQCEwJrxews=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1K1QSN8PWLbJyn6bQCkh0oQ1E0Y=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1o83RAq3tfFmqT03ETCC0VXOjBQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2OxNgs6AbiihIfUpeefMFnG3DxY=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3Qf5r_OxVwf6s2xUoe15VeyNNrg=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/41lgecDnOWjHL4FTuhejBMHQSLI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5BDiHMB3Kg6y7+nsq2NvSAD6R1k=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5M7w6IQsOvx_IvB92fpgMgKieYE=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/61wkOnCATzfmv14gdIOLnyxTaOA=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7nbqrMAUs63+cPJ3eWZgQ08uGpo=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8Be_h1mYYr2pjIWZCngRzmyqtfo=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/8ZoXbp4ROAW3WjetlkXjHKR2mhU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9kyoIOQNCzusEhw2weiwlrmJiBU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EeGJj1pNd8Xr4DyXHILwV+LWJaw=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EkEiYoaAr3jAzcU99iiIHPr8w3Q=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/F0o9f146yBp0snWC40Cj6A+Ex2Q=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GWRFgHVVXyNp1i_sFoslmCf6_2E=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HKybQWi3n+Dv75n5vk+quODJL4I=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HSF9xj3K7DpwhZJAED6vjp9Bol0=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6OIsmGbQcg1kmfh_y1R0xXhzNU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J6PCRaZimsDOcz_RYz9cqf8Upog=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Jx2ACtPRDXlzjQlzglejy6KAUgQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/L7zWJE0gfXFnLH3hZjRv0RBvjWI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LkkU5+vpNfxxckYixpZQ99UC24A=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OwVHxuB+9K73FFhxNiI+YS3YJAg=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PXXA5XiY11bh2DvMX1+hicUgWEI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PtvnDYobQ+q_jY_kY0OmgfXjD4M=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PwoX6vYO7wVv3mUTe1lgLZ8JI4s=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q641esvg4DilQ6RrhERgJwQ1jHQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QYHarRNMnilAyerIjIpwkmctUds=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RV9W3sCZza9tL3bZuO11GmKKq_0=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RfNkY69A8SI36CYmL+3RvA1WlUs=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SxMKE142dNeEoPQEpaY9wbXbb0k=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TBHqOkO6agN_Wbp092VTqXTiUbg=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TSpTeloO+DjLG24bbY8fsxAdnsU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/TeV6SlKIRP0ajcnHiVfOiJC_Ywo=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UeGSqC7bpXaDRxbzoGdtOlJdt4g=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/UekLtfKlG6kiKvS9Phhkr5HnISk=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Ueq2rk8kt3vwiU9bwHAnVt_WYV4=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VBGqBo8gRIEZxGAEDLidO9Dztss=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WsbdFb+dl8ePjfy8WnHP216B0eg=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/X7+oTTDkgxspRfdawY8tuMIPpiE=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YrCVQdLuwCHN8d2hKs37oq474Us=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZMjA2oYtQEyBM7SeZQn7mVobv7c=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZrV5ZB7HqoF7JSxhhhEOCs7lJeA=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/_F4FmLcqz0dfV2evxjarZB7yIX4=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aVXv9LhoEzXunPQkUOnFXKlPKpg=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/c+5ECWR1yC8Qw3e88nw6Xk4NNAY=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cj4KONDmjSEUGhTrQaFRtoOIOK8=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/djFH0uLpoys5t+79vtYmnhLF5F8=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/eCfkPb8LMeSn_Y0pAd0ccXbHJJk=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/euWylf0VRuHncRMxlXWUTQNuanw=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fYpRjCheE7OXcA0aAUbWagDAdq0=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/figPCiO3xNXDgZa9nfSivK28bkU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hSLWilU_mqb1ushNob1fH5rvK+I=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ibnLgc0juzjAxAssKLx1+fHGGsw=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jLOqDr8JxulDsHtPLjVOmgw4m7Y=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/kRU26mawdab9xTwwE99_P4R+a0M=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mgiR88UuhgLupMrrGUnkA+hocVo=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mqbU+DTmGSsLSbiUMoEaSxpxjQI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oqvCuyBa6k9l7pfxMrBzWKa1HeY=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rYpRUHizT2UqzIW_UV+XPjqVsxU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rc4_B7D9fZDARCqPdKAw1c4R7KY=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/t0je2h829hTRp45PdY2Kt1WjKAA=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tbAY+ZQn+2Usvtcj57BwX89ugCk=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tkT8ywPjVsKUGge4+WBRxY6zAQ4=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tzbQlSxQACjQfi6t2a2imoVXevI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uEVBYrmWNUJzNiSfb9xcoLZNnPw=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/uhruMAN_71VkQ3l+UATJWip9TzQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/v3dUycdqwBncVCU8wgvN3KgBueQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vKvIaLpSBIXZCDXtuFt0RKqNmi4=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/wdsMIQNMad+UTVQ3IjDgk5w+NbM=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yengta030sTmpPErg6xWaBPBYOU=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zDkUFZA3qTSjGYT+lCnY+rGsnNQ=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zljJSj4cFjHNuyvitAnBPgYHQHI=
+ D app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/zyNAwtzdQyF66LJRtaztUmRTtfk=
+ M app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+ D app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+ D app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+ D app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0
+ D app/build/intermediates/java_res/debug/out/META-INF/app_debug.kotlin_module
+ D app/build/intermediates/merged_java_res/debug/base.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_0.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_1.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_2.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_3.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_4.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_5.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_6.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_7.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_8.jar
+ D app/build/intermediates/project_dex_archive/debug/out/10a584c5697d5b2c5b7c6ec460908388f4677b100393449ec5e960e32ecb0fe5_9.jar
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ComposableSingletons$MainActivityKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp$Companion.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/FocalboardApp.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/MainActivity.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService$cookieJar$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ApiService.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/AuthResponseV2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Board.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardCreateRequest.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRow.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowCreateRequest.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardRowUpdateRequest.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/BoardView.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CellValue.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/CsrfResponse.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/Filter.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/FocalboardApi.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/LoginRequestV2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/UserInfo.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/api/ViewOptions.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$Companion.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$clearAuth$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManager.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/local/SettingsManagerKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository$login$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/data/repository/AuthRepository.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/NavGraphKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Login.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen$Main.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/navigation/Screen.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/login/LoginScreenKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/screens/main/MainScreenKt.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.dex
+ D app/build/intermediates/project_dex_archive/debug/out/com/focalboard/android/ui/theme/ThemeKt.dex
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ M app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+ M app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ M app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ M app/build/kspCaches/debug/classLookups/counters.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/classLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/classLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/classLookups/lookups.tab
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/classLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.len
+ M app/build/kspCaches/debug/classLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/classLookups/lookups.tab_i
+ M app/build/kspCaches/debug/sourceToOutputs
+ M app/build/kspCaches/debug/sourceToOutputs.values.at
+ M app/build/kspCaches/debug/symbolLookups/counters.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.len
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/file-to-id.tab_i
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.len
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/id-to-file.tab_i
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.len
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab.values.at
+ M app/build/kspCaches/debug/symbolLookups/lookups.tab_i
+ M app/build/kspCaches/debug/symbols
+ M app/build/kspCaches/debug/symbols.values.at
+ D app/build/outputs/apk/debug/app-debug.apk
+ D app/build/outputs/apk/debug/output-metadata.json
+ M build.gradle.kts
+ M progress.log
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
