@@ -96,8 +96,10 @@ class BoardDetailViewModel(
             if (token == null || serverUrl == null || currentBoard == null) return@launch
             
             try {
-                _uiState.value = (_uiState.value as? BoardDetailUiState.Success)?.copy(isLoading = true)
-                    ?: BoardDetailUiState.Loading
+                _uiState.value = when (val currentState = _uiState.value) {
+                    is BoardDetailUiState.Success -> currentState.copy(isLoading = true)
+                    else -> BoardDetailUiState.Loading
+                }
                 
                 val api = apiService.getFocalboardApi(serverUrl)
                 val csrfToken = "1"
@@ -145,7 +147,15 @@ class BoardDetailViewModel(
                 // Update local state
                 currentRows = currentRows + newRow
                 
-                _uiState.value = (_uiState.value as? BoardDetailUiState.Success)?.copy(rows = currentRows)
+                _uiState.value = when (val currentState = _uiState.value) {
+                    is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
+                    else -> BoardDetailUiState.Success(
+                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        views = currentViews,
+                        rows = currentRows,
+                        selectedViewId = currentViewId
+                    )
+                }
             } catch (e: Exception) {
                 _uiState.value = BoardDetailUiState.Error(e.message ?: "Failed to create card")
             }
@@ -173,7 +183,15 @@ class BoardDetailViewModel(
                 // Update local state
                 currentRows = currentRows.map { if (it.id == rowId) updatedRow else it }
                 
-                _uiState.value = (_uiState.value as? BoardDetailUiState.Success)?.copy(rows = currentRows)
+                _uiState.value = when (val currentState = _uiState.value) {
+                    is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
+                    else -> BoardDetailUiState.Success(
+                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        views = currentViews,
+                        rows = currentRows,
+                        selectedViewId = currentViewId
+                    )
+                }
             } catch (e: Exception) {
                 _uiState.value = BoardDetailUiState.Error(e.message ?: "Failed to update card")
             }
@@ -196,7 +214,15 @@ class BoardDetailViewModel(
                 // Update local state
                 currentRows = currentRows.filter { it.id != rowId }
                 
-                _uiState.value = (_uiState.value as? BoardDetailUiState.Success)?.copy(rows = currentRows)
+                _uiState.value = when (val currentState = _uiState.value) {
+                    is BoardDetailUiState.Success -> currentState.copy(rows = currentRows)
+                    else -> BoardDetailUiState.Success(
+                        board = currentBoard ?: Board("", "", "", "", "", ""),
+                        views = currentViews,
+                        rows = currentRows,
+                        selectedViewId = currentViewId
+                    )
+                }
             } catch (e: Exception) {
                 _uiState.value = BoardDetailUiState.Error(e.message ?: "Failed to delete card")
             }

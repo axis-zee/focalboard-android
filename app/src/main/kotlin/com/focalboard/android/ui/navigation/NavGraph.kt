@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.focalboard.android.ui.screens.boarddetail.BoardDetailScreen
 import com.focalboard.android.ui.screens.login.LoginScreen
 import com.focalboard.android.ui.screens.main.MainScreen
 
@@ -40,6 +41,9 @@ fun NavGraph(
                     navController.navigate(Screen.Login.route) {
                         popUpTo(0) { inclusive = true }
                     }
+                },
+                onBoardClick = { boardId ->
+                    navController.navigate(Screen.BoardDetail(boardId).route)
                 }
             )
         }
@@ -49,9 +53,12 @@ fun NavGraph(
             arguments = listOf(
                 navArgument("boardId") { type = NavType.StringType }
             )
-        ) {
-            // TODO: Implement BoardDetailScreen
-            MainScreen()
+        ) { backStackEntry ->
+            val boardId = backStackEntry.arguments?.getString("boardId") ?: return@composable
+            BoardDetailScreen(
+                boardId = boardId,
+                onBack = { navController.popBackStack() }
+            )
         }
     }
 }

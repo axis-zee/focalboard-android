@@ -9,7 +9,14 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.ViewList
+import androidx.compose.material.icons.outlined.Error
+import androidx.compose.material.icons.outlined.ViewList
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -133,14 +140,14 @@ fun BoardDetailScreen(
                     } else {
                         // Display based on view type
                         val currentView = state.views.find { it.id == state.selectedViewId }
-                        when (currentView?.type) {
-                            "kanban" -> KanbanView(
+                        when {
+                            currentView?.type == "kanban" -> KanbanView(
                                 rows = state.rows,
                                 statusColumnId = currentView.options?.groupByColumnId,
                                 onCardClick = { row -> showEditCardDialog = row },
                                 onAddCard = { showAddCardDialog = true }
                             )
-                            "grid", else -> GridView(
+                            else -> GridView(
                                 rows = state.rows,
                                 onCardClick = { row -> showEditCardDialog = row },
                                 onAddCard = { showAddCardDialog = true }
@@ -416,7 +423,7 @@ fun KanbanCard(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
-                card.cells.filterKeys { it != "title" }.take(3).forEach { (_, cellValue) ->
+                card.cells.filterKeys { it != "title" }.toList().take(3).forEach { (_, cellValue) ->
                     if (cellValue.text != null) {
                         AssistChip(
                             onClick = { },
@@ -522,7 +529,7 @@ fun EmptyBoardState(onAddCard: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Default.ViewList,
+                imageVector = Icons.Outlined.ViewList,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -572,7 +579,7 @@ fun ErrorBoardState(message: String, onRetry: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Default.Error,
+                imageVector = Icons.Outlined.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error

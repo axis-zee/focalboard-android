@@ -133,7 +133,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
     
-    fun getServerUrl(): String? {
+    suspend fun getServerUrl(): String? {
         return settingsManager.getServerUrl().firstOrNull()
     }
 }

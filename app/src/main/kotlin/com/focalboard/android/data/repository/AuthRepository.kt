@@ -12,7 +12,7 @@ class AuthRepository(
     private val apiService = ApiService()
     
     val isLoggedIn: Boolean
-        get() = settingsManager.getAuthToken().value != null
+        get() = settingsManager.getAuthToken().firstOrNull() != null
     
     val currentServerUrl: Flow<String?>
         get() = settingsManager.getServerUrl()

@@ -5,7 +5,14 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Description
+import androidx.compose.material.icons.filled.Error
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.ViewList
+import androidx.compose.material.icons.outlined.Description
+import androidx.compose.material.icons.outlined.Error
 import androidx.compose.material.icons.automirrored.filled.ChevronRight
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -22,7 +29,8 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(
-    onLogout: () -> Unit = {}
+    onLogout: () -> Unit = {},
+    onBoardClick: (String) -> Unit = {}
 ) {
     val application = (LocalContext.current.applicationContext as Application)
     val viewModel: MainViewModel = viewModel(
@@ -94,9 +102,7 @@ fun MainScreen(
                         BoardList(
                             boards = state.boards,
                             isLoading = state.isLoading,
-                            onBoardClick = { boardId ->
-                                // TODO: Navigate to board detail
-                            }
+                            onBoardClick = onBoardClick
                         )
                     }
                 }
@@ -115,9 +121,7 @@ fun MainScreen(
                             BoardList(
                                 boards = state.boards,
                                 isLoading = false,
-                                onBoardClick = { boardId ->
-                                    // TODO: Navigate to board detail
-                                }
+                                onBoardClick = onBoardClick
                             )
                         }
                     }
@@ -301,7 +305,7 @@ fun ErrorState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Default.Error,
+                imageVector = Icons.Outlined.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error

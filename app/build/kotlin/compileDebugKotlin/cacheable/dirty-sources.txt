@@ -2,6 +2,7 @@
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/data/repository/AuthRepository.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/ui/screens/main/MainScreen.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/data/repository/BoardRepository.kt
+/home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/ui/viewmodel/BoardDetailViewModel.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/data/local/FocalboardDatabase.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/ui/navigation/NavGraph.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/MainActivity.kt
@@ -13,3 +14,4 @@
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/data/local/SettingsManager.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/ui/theme/Theme.kt
 /home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/data/local/BoardDao.kt
+/home/zaytun/.openclaw/workspace/focalboard-android/app/src/main/kotlin/com/focalboard/android/ui/screens/boarddetail/BoardDetailScreen.kt
