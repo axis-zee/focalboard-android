@@ -141,3 +141,561 @@ Ready to build. Run:
 ```bash
 ./gradlew assembleDebug
 ```
+[main 0b6f80e] chore: auto-save progress 2026-04-15 03:30
+ 339 files changed, 6496 insertions(+), 20625 deletions(-)
+ create mode 100644 app/build/generated/ksp/debug/java/com/focalboard/android/data/local/BoardDao_Impl.java
+ create mode 100644 app/build/generated/ksp/debug/java/com/focalboard/android/data/local/FocalboardDatabase_Impl.java
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+ create mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ delete mode 100644 app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+ create mode 100644 app/build/kspCaches/debug/ap-classpath-entries.bin
+ create mode 100644 app/build/kspCaches/debug/backups/java/byRounds/1/com/focalboard/android/data/local/BoardDao_Impl.java
+ create mode 100644 app/build/kspCaches/debug/backups/java/byRounds/1/com/focalboard/android/data/local/FocalboardDatabase_Impl.java
+ create mode 100644 app/build/kspCaches/debug/caches.uptodate
+ create mode 100644 app/build/kspCaches/debug/classLookups/counters.tab
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab => kspCaches/debug/classLookups/file-to-id.tab} (95%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/file-to-id.tab.keystream (75%)
+ create mode 100644 app/build/kspCaches/debug/classLookups/file-to-id.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/classLookups/file-to-id.tab.len
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/file-to-id.tab.values.at (58%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i => kspCaches/debug/classLookups/file-to-id.tab_i} (98%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/file-to-id.tab_i.len (100%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab => kspCaches/debug/classLookups/id-to-file.tab} (95%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/id-to-file.tab.keystream (98%)
+ create mode 100644 app/build/kspCaches/debug/classLookups/id-to-file.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/classLookups/id-to-file.tab.len
+ create mode 100644 app/build/kspCaches/debug/classLookups/id-to-file.tab.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/id-to-file.tab_i (99%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/id-to-file.tab_i.len (100%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab => kspCaches/debug/classLookups/lookups.tab} (92%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab => kspCaches/debug/classLookups/lookups.tab.keystream} (95%)
+ create mode 100644 app/build/kspCaches/debug/classLookups/lookups.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/classLookups/lookups.tab.len
+ create mode 100644 app/build/kspCaches/debug/classLookups/lookups.tab.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i => kspCaches/debug/classLookups/lookups.tab_i} (96%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/classLookups}/lookups.tab_i.len (100%)
+ create mode 100644 app/build/kspCaches/debug/classpath-entries.bin
+ create mode 100644 app/build/kspCaches/debug/classpath-structure.bin
+ create mode 100644 app/build/kspCaches/debug/sourceToOutputs
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab => kspCaches/debug/sourceToOutputs.keystream} (92%)
+ create mode 100644 app/build/kspCaches/debug/sourceToOutputs.keystream.len
+ create mode 100644 app/build/kspCaches/debug/sourceToOutputs.len
+ create mode 100644 app/build/kspCaches/debug/sourceToOutputs.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i => kspCaches/debug/sourceToOutputs_i} (99%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len => kspCaches/debug/sourceToOutputs_i.len} (100%)
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/counters.tab
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream => kspCaches/debug/symbolLookups/file-to-id.tab} (93%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream => kspCaches/debug/symbolLookups/file-to-id.tab.keystream} (71%)
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/file-to-id.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/file-to-id.tab.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/file-to-id.tab.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i => kspCaches/debug/symbolLookups/file-to-id.tab_i} (98%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len => kspCaches/debug/symbolLookups/file-to-id.tab_i.len} (100%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups => kspCaches/debug/symbolLookups}/id-to-file.tab (93%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream => kspCaches/debug/symbolLookups/id-to-file.tab.keystream} (98%)
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/id-to-file.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/id-to-file.tab.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/id-to-file.tab.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i => kspCaches/debug/symbolLookups/id-to-file.tab_i} (99%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len => kspCaches/debug/symbolLookups/id-to-file.tab_i.len} (100%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream => kspCaches/debug/symbolLookups/lookups.tab} (64%)
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/lookups.tab.keystream.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/lookups.tab.len
+ create mode 100644 app/build/kspCaches/debug/symbolLookups/lookups.tab.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i => kspCaches/debug/symbolLookups/lookups.tab_i} (72%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len => kspCaches/debug/symbolLookups/lookups.tab_i.len} (100%)
+ create mode 100644 app/build/kspCaches/debug/symbols
+ create mode 100644 app/build/kspCaches/debug/symbols.keystream
+ create mode 100644 app/build/kspCaches/debug/symbols.keystream.len
+ create mode 100644 app/build/kspCaches/debug/symbols.len
+ create mode 100644 app/build/kspCaches/debug/symbols.values.at
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i => kspCaches/debug/symbols_i} (96%)
+ rename app/build/{kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len => kspCaches/debug/symbols_i.len} (100%)
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp$Companion.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/MainActivity.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService$cookieJar$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/AuthResponseV2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Board.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardCreateRequest.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRow.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowCreateRequest.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowUpdateRequest.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardView.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CellValue.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CsrfResponse.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Filter.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LoginRequestV2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/UserInfo.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ViewOptions.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$Companion.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$clearAuth$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManagerKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$login$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Login.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Main.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.class
+ delete mode 100644 app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt.class
+## 📊 Focalboard Android - Progress Report
+**Generated:** 2026-04-15 03:30:01
+
+### 📁 Recent Commits
+db9ef44 chore: auto-save progress 2026-04-15 03:00
+5b70d0d chore: auto-save progress 2026-04-15 02:30
+274e8ad chore: auto-save progress 2026-04-15 02:00
+7e456d0 chore: auto-save progress 2026-04-15 01:30
+e741097 chore: auto-save progress 2026-04-15 01:00
+
+### 📊 Repository Stats
+- **Total commits:** 385
+- **Total files:** 685
+- **Total lines of code:** 9941
+
+### 📦 Uncommitted Changes
+ M .gradle/8.2/checksums/checksums.lock
+ M .gradle/8.2/checksums/md5-checksums.bin
+ M .gradle/8.2/checksums/sha1-checksums.bin
+ M .gradle/8.2/executionHistory/executionHistory.bin
+ M .gradle/8.2/executionHistory/executionHistory.lock
+ M .gradle/8.2/fileHashes/fileHashes.bin
+ M .gradle/8.2/fileHashes/fileHashes.lock
+ M .gradle/8.2/fileHashes/resourceHashesCache.bin
+ M .gradle/buildOutputCleanup/buildOutputCleanup.lock
+ M .gradle/buildOutputCleanup/outputFiles.bin
+ M .gradle/file-system.probe
+ M app/build.gradle.kts
+ M app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar
+ M app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+ M app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+ M app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+ M app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json
+ M app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json
+ M app/build/intermediates/source_set_path_map/debug/file-map.txt
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/package-parts.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+ D app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+ D app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+ D app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+ M app/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+ M app/build/outputs/logs/manifest-merger-debug-report.txt
+ D app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt$lambda-3$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ComposableSingletons$MainActivityKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp$Companion.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/FocalboardApp.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/MainActivity.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService$cookieJar$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ApiService.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/AuthResponseV2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Board.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardCreateRequest.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRow.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowCreateRequest.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardRowUpdateRequest.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/BoardView.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CellValue.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/CsrfResponse.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/Filter.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi$DefaultImpls.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/FocalboardApi.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/LoginRequestV2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/UserInfo.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/api/ViewOptions.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$Companion.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$clearAuth$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getAuthToken$$inlined$map$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getServerUrl$$inlined$map$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$getUserInfo$$inlined$map$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveAuthToken$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveServerUrl$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager$saveUserInfo$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManager.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/local/SettingsManagerKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository$login$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/data/repository/AuthRepository.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt$lambda-1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/ComposableSingletons$NavGraphKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt$NavGraph$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/NavGraphKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Login.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen$Main.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/navigation/Screen.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-3$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-4$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-5$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt$lambda-6$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/ComposableSingletons$LoginScreenKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$3$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$4$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$5.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1$1$6.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt$LoginScreen$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/login/LoginScreenKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-3$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-4$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-5$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-6$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-7$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-8$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt$lambda-9$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/ComposableSingletons$MainScreenKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1$2$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt$MainScreen$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/screens/main/MainScreenKt.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$1.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt$FocalboardAndroidTheme$2.class
+ D app/build/tmp/kotlin-classes/debug/com/focalboard/android/ui/theme/ThemeKt.class
+ M app/src/main/kotlin/com/focalboard/android/data/repository/AuthRepository.kt
+ M app/src/main/kotlin/com/focalboard/android/ui/navigation/NavGraph.kt
+ M app/src/main/kotlin/com/focalboard/android/ui/screens/main/MainScreen.kt
+ M app/src/main/kotlin/com/focalboard/android/ui/viewmodel/MainViewModel.kt
+ M build.gradle
+ M progress.log
+?? app/build/generated/
+?? app/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+?? app/build/kspCaches/
+
+### 🔄 Last Push
+30 minutes ago
+
+### 📝 Next Tasks
+- [ ] Implement Focalboard API client
+- [ ] Add actual login authentication
+- [ ] Fetch and display boards
+- [ ] Add board detail screen with Kanban view
+- [ ] Implement card CRUD operations
+- [ ] Add drag-and-drop for cards
+- [ ] Add offline caching with Room
