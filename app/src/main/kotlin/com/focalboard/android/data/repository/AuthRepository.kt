@@ -12,7 +12,7 @@ class AuthRepository(
     private val apiService = ApiService()
     
     suspend fun isLoggedIn(): Boolean {
-        return settingsManager.getAuthToken().firstOrNull() != null
+        return settingsManager.getAuthToken().first() != null
     }
     
     val currentServerUrl: Flow<String?>

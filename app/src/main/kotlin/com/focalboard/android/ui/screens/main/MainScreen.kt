@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -98,7 +99,7 @@ fun MainScreen(
                     }
                 }
                 
-                is MainUiState.Icons.Outlined.Error -> {
+                is MainUiState.Error -> {
                     if (state.boards.isEmpty()) {
                         ErrorState(
                             message = state.message,
@@ -191,7 +192,7 @@ fun BoardItem(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Outlined.Description,
+                imageVector = Icons.Filled.Article,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(40.dp)
@@ -241,7 +242,7 @@ fun EmptyState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Outlined.Description,
+                imageVector = Icons.Filled.Article,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -296,7 +297,7 @@ fun ErrorState(
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Outlined.Error,
+                imageVector = Icons.Filled.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error
@@ -352,7 +353,7 @@ fun ErrorBanner(message: String) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Outlined.Error,
+                imageVector = Icons.Filled.Error,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onErrorContainer,
                 modifier = Modifier.size(20.dp)

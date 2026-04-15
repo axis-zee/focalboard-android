@@ -9,7 +9,8 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Icons.AutoMirrored.Filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -57,7 +58,7 @@ fun BoardDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            imageVector = ArrowBack,
                             contentDescription = "Back"
                         )
                     }
@@ -70,7 +71,7 @@ fun BoardDetailScreen(
                                 Box {
                                     IconButton(onClick = { /* TODO: Show view selector */ }) {
                                         Icon(
-                                            imageVector = Icons.Outlined.ViewList,
+                                            imageVector = Icons.Filled.ListAlt,
                                             contentDescription = "Change view"
                                         )
                                     }
@@ -148,7 +149,7 @@ fun BoardDetailScreen(
                     }
                 }
                 
-                is BoardDetailUiState.Icons.Outlined.Error -> {
+                is BoardDetailUiState.Error -> {
                     ErrorBoardState(
                         message = state.message,
                         onRetry = { viewModel.refresh() }
@@ -521,7 +522,7 @@ fun EmptyBoardState(onAddCard: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Outlined.ViewList,
+                imageVector = Icons.Filled.ListAlt,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
@@ -571,7 +572,7 @@ fun ErrorBoardState(message: String, onRetry: () -> Unit) {
             modifier = Modifier.padding(32.dp)
         ) {
             Icon(
-                imageVector = Icons.Outlined.Error,
+                imageVector = Icons.Filled.Error,
                 contentDescription = null,
                 modifier = Modifier.size(80.dp),
                 tint = MaterialTheme.colorScheme.error
