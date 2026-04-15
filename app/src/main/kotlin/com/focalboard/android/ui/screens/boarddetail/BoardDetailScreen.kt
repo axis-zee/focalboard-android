@@ -223,6 +223,7 @@ fun BoardDetailScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KanbanView(
     rows: List<BoardRow>,
@@ -263,6 +264,7 @@ fun KanbanView(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KanbanColumn(
     status: String,
@@ -352,6 +354,7 @@ fun KanbanColumn(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KanbanAddColumn(onAddCard: () -> Unit) {
     Card(
@@ -386,6 +389,7 @@ fun KanbanAddColumn(onAddCard: () -> Unit) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KanbanCard(
     card: BoardRow,
@@ -430,6 +434,7 @@ fun KanbanCard(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GridView(
     rows: List<BoardRow>,

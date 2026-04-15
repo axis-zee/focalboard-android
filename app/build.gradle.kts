@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.focalboard.android"
-    compileSdk = 34
+    compileSdk = 33
 
     // Workaround for missing jlink on ARM64
     tasks.withType<JavaCompile> {
@@ -56,7 +56,7 @@ android {
     }
     
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.4.0"
     }
 
     buildFeatures {
@@ -64,7 +64,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.4.0"
     }
 
     packaging {
@@ -82,11 +82,11 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.1")
     
     // Compose - explicit versions
-    implementation("androidx.compose.ui:ui:1.5.4")
-    implementation("androidx.compose.ui:ui-graphics:1.5.4")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.5.4")
-    implementation("androidx.compose.material3:material3:1.1.2")
-    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+    implementation("androidx.compose.ui:ui:1.4.0")
+    implementation("androidx.compose.ui:ui-graphics:1.4.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")
+    implementation("androidx.compose.material3:material3:1.0.1")
+    implementation("androidx.compose.material:material-icons-extended:1.4.0")
     
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.5")

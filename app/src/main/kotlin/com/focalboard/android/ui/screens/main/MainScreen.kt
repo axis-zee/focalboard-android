@@ -17,6 +17,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.focalboard.android.ui.viewmodel.MainUiState
 import com.focalboard.android.ui.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -175,6 +176,7 @@ fun BoardList(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BoardItem(
     board: com.focalboard.android.data.api.Board,
