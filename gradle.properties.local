@@ -23,10 +23,9 @@ kotlin.code.style=official
 android.nonTransitiveRClass=true
 # Native ARM64 build configuration
 android.aapt2FromMavenOverride=/usr/lib/android-sdk/build-tools/debian/aapt2
-# org.gradle.java.home=
+org.gradle.java.home=/home/zaytun/jdk-21/jdk-21.0.2
 org.gradle.jvmargs=-Xmx4096m
 org.gradle.parallel=true
 # Workaround for missing jlink
 android.defaults.buildfeatures.buildconfig=true
 android.experimental.enableNewResourceShrinker=false
-android.aapt2.fromMavenOverride=false

@@ -1,36 +1,42 @@
-# Dockerfile for building Focalboard Android APK
-# Uses x86_64 architecture to avoid AAPT2 ARM64 issues
-FROM gradle:8.2-jdk17 AS builder
+FROM eclipse-temurin:17-jdk
 
 # Install dependencies
-RUN apt-get update && apt-get install -y wget unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    wget \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set up Android SDK
-ENV ANDROID_HOME=/usr/local/android-sdk
+ENV ANDROID_HOME=/opt/android-sdk
+ENV ANDROID_SDK_ROOT=/opt/android-sdk
+ENV PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/34.0.0
+
 RUN mkdir -p $ANDROID_HOME/cmdline-tools
+RUN wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O /tmp/cmdline-tools.zip && \
+    unzip -q /tmp/cmdline-tools.zip -d $ANDROID_HOME/cmdline-tools && \
+    mv $ANDROID_HOME/cmdline-tools/cmdline-tools $ANDROID_HOME/cmdline-tools/latest && \
+    rm /tmp/cmdline-tools.zip
 
-# Download and install Android command-line tools
-WORKDIR $ANDROID_HOME/cmdline-tools
-RUN wget -q https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip -O cmdline-tools.zip && \
-    unzip -q cmdline-tools.zip && \
-    mv cmdline-tools latest && \
-    rm cmdline-tools.zip
+# Accept licenses
+RUN yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
 
-ENV PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+# Install required SDK components
+RUN $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
-# Accept licenses and install SDK components
-RUN yes | sdkmanager --licenses 2>/dev/null || true
-RUN sdkmanager 'platform-tools' 'platforms;android-34' 'build-tools;34.0.0'
+# Remove the problematic Debian symlink - we'll use AAPT2 from Maven instead
+# The symlink was causing shell parsing errors
 
-# Copy project and build
-WORKDIR /workspace
+# Set working directory
+WORKDIR /app
+
+# Copy project files
 COPY . .
-RUN chmod +x gradlew && ./gradlew assembleDebug --no-daemon
 
-# Output stage
-FROM alpine:latest
-RUN apk add --no-cache tar
-WORKDIR /output
-COPY --from=builder /workspace/app/build/outputs/apk/debug/app-debug.apk .
+# Build the APK
+RUN chmod +x ./gradlew && \
+    ./gradlew assembleDebug --no-daemon
 
-CMD ["tar", "czf", "-C", ".", "app-debug.apk"]
+# Copy output
+RUN cp app/build/outputs/apk/debug/app-debug.apk /app-debug.apk
+
+CMD ["/bin/bash"]

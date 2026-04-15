@@ -13,10 +13,9 @@ android {
         options.compilerArgs.add("-XDignore.symbol.file")
     }
 
-    // Disable AAPT2 (x86 binary doesn't work on ARM64 without QEMU)
-    // Use AAPT1 instead
-    aaptOptions {
-        // AAPT1 fallback
+    // Workaround for missing jlink on ARM64
+    tasks.withType<JavaCompile> {
+        options.compilerArgs.add("-XDignore.symbol.file")
     }
 
     defaultConfig {
@@ -56,7 +55,6 @@ android {
     }
     
     composeOptions {
-        suppressKotlinVersionCompatibilityCheck = true
         kotlinCompilerExtensionVersion = "1.5.12"
     }
 
@@ -65,7 +63,6 @@ android {
     }
 
     composeOptions {
-        suppressKotlinVersionCompatibilityCheck = true
         kotlinCompilerExtensionVersion = "1.5.12"
     }
 
